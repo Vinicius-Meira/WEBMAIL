@@ -1,0 +1,78 @@
+version: '3'
+services:                                 #criar os serviços
+  web01: 
+    build:                                #Vai criar as configurações definidas de um dockerfile
+      context: ./conf-web01               #busca dentro da pasta "conf-web01"
+      dockerfile: Dockerfile              #seleciona o arquivo dockerfile com as informações do container
+    image: web01                          #Imagem do servidor Docker        
+    container_name: web01                #Nome do container que será criado
+    restart: always                       #Caso o container pare de funcionar ele irá reiniciar automáticamente
+    tty: true                             #Habilita terminal no container criado                             
+    networks:                             #rede que o container irá funcionar
+     - asa-network
+
+  web02: 
+    build:                                #Vai criar as configurações definidas de um dockerfile
+      context: ./conf-web02               #busca dentro da pasta "conf-web01"
+      dockerfile: Dockerfile              #seleciona o arquivo dockerfile com as informações do container
+    image: web02                          #Imagem do servidor Docker        
+    container_name: web02                 #Nome do container que será criado
+    restart: always                       #Caso o container pare de funcionar ele irá reiniciar automáticamente
+    tty: true
+    networks:                             #rede que o container irá funcionar
+     - asa-network  
+
+  proxy: 
+    build:                                #Vai criar as configurações definidas de um dockerfile
+      context: ./conf-proxy               #busca dentro da pasta "conf-proxy"
+      dockerfile: Dockerfile              #seleciona o arquivo dockerfile com as informações do container
+    image: proxy                          #Imagem do servidor Docker        
+    container_name: proxy                 #Nome do container que será criado
+    hostname: www.asa.br
+    restart: always                       #Caso o container pare de funcionar ele irá reiniciar automáticamente
+    tty: true                             #Habilita terminal no container criado  
+    ports:                                #porta que o container irá executar 
+     - "8080:80"                          #"8000" porta do host, "80" porta do container 
+    networks:                             #rede que o container irá funcionar
+     - asa-network
+
+  dns: 
+    build:                                #Vai criar as configurações definidas de um dockerfile
+      context: ./conf-dns                 #busca dentro da pasta "conf-proxy"
+      dockerfile: Dockerfile              #seleciona o arquivo dockerfile com as informações do container
+    image: dns                            #Imagem do servidor Docker        
+    container_name: dns                   #Nome do container que será criado
+    hostname: ns1.com.br
+    restart: always                       #Caso o container pare de funcionar ele irá reiniciar automáticamente
+    tty: true                             #Habilita terminal no container criado  
+    ports:                                #porta que o container irá executar 
+     - "53:53/tcp"                        #"53" porta tcp do host, "53" porta tcp do container
+     - "53:53/udp"                         #"53" porta udp do host, "53" porta udp do container 
+    networks:                             #rede que o container irá funcionar
+     - asa-network
+
+  email: 
+    build:                                #Vai criar as configurações definidas de um dockerfile
+      context: ./conf-email                 #busca dentro da pasta "conf-proxy"
+      dockerfile: Dockerfile              #seleciona o arquivo dockerfile com as informações do container
+    image: email                            #Imagem do servidor Docker        
+    container_name: email                   #Nome do container que será criado
+    hostname: mail.asa.br
+    restart: always                       #Caso o container pare de funcionar ele irá reiniciar automáticamente
+    tty: true                             #Habilita terminal no container criado  
+    volumes:
+      - ./conf-email/rainloop:/var/www/html/rainloop
+    ports:                                #porta que o container irá executar 
+     - "25:25/tcp"                        #"25" porta tcp do host, "25" porta tcp do container                       
+     - "100:100/tcp"
+     - "143:143/tcp"
+     - "587:587/tcp"
+     - "993:993/tcp"
+     - "995:995/tcp"
+    networks:                             #rede que o container irá funcionar
+     - asa-network
+  
+#DOCKER Networks 
+networks:                                #Criar rede do container
+  asa-network:                           #nome da rede  
+    driver: bridge                       #tipo da rede
