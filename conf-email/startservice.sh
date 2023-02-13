@@ -5,9 +5,9 @@ echo "iniciando dovecot"
 /etc/init.d/dovecot start
 echo "criando usuários"
 useradd -c 'vinicius' -m -s /bin/false vinicius
-echo "vinicius:123456"|chpasswd
-useradd -c 'juan' -m -s /bin/false jefferson
-echo "juan:123456"|chpasswd
+echo "vinicius:top"|chpasswd
+useradd -c 'juan' -m -s /bin/false juan
+echo "juan:galado"|chpasswd
 echo "permissoes"
 cd /var/www/html/
 chmod 755 -R rainloop/
