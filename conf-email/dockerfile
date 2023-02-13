@@ -2,7 +2,7 @@ FROM ubuntu:20.04
 
 RUN apt update
 #instalando o servidor de e-mail base
-RUN apt-get install -y postfix dnsutils iputils-ping telnet dovecot-common dovecot-core dovecot-imapd dovecot-pop3d 
+RUN apt-get install -y systemctl postfix dnsutils iputils-ping telnet dovecot-common dovecot-core dovecot-imapd dovecot-pop3d 
 #instalando o apache e o php para servir de servidor para o webmail
 RUN apt-get install -y apache2 apache2-utils libapache2-mod-php php php-cli php-curl php-xml php-imap nano net-tools
 
@@ -21,5 +21,7 @@ COPY /dovecot/dovecot.conf /etc/dovecot/dovecot.conf
 #Script para iniciar o webmail, como configurações e permissões
 COPY startservice.sh /shell/startservice.sh
 #executa uma instância bash, que nesse caso, executa o script
-ENTRYPOINT [ "/shell/startservice.sh" ] 
+#ENTRYPOINT [ "/shell/startservice.sh" ] 
+
+
  
