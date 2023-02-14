@@ -28,12 +28,12 @@ COPY . .
 RUN chmod +x run.sh
 
 # Add User
-RUN useradd -c 'User vini' -m -s /bin/false vini
+RUN useradd -c 'User vinicius' -m -s /bin/false vinicius
 
 RUN useradd -c 'User juan' -m -s /bin/false juan
 
 # Set user password
-RUN echo "vini:top" | chpasswd
+RUN echo "vinicius:top" | chpasswd
 
 RUN echo "juan:galado" | chpasswd
 

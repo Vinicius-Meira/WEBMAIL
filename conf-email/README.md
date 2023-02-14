@@ -8,3 +8,6 @@ Foi criado um dockerfile para criação de um webmail através de uma imagem **d
 
 
 Para acessar o WEBMAIL é só acessar usando **www.asa.br:8080/rainloop/**, assim você cairá na pasta padrão de login para usuário comum entrar, já se acessar com **www.asa.br:8080/rainloop/?admin#/domains**, estará acessando como administrador, para efetuar as configurações. O usuário é *admin* e a senha é *12345*.
+
+Ou então utilizar http://localhost:8080/rainloop/
+E se for adming http://localhost:8080/rainloop/?admin#/general
