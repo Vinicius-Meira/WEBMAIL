@@ -15,8 +15,8 @@ $TTL	604800
 @	IN	A	127.0.0.1
 @	IN	AAAA	::1
 
-ns1			A	10.25.2.99  ;alterar para ip da máquina local
-mail		A 	10.25.2.99  ;alterar para ip da máquina local
+ns1			A	192.168.1.72  ;alterar para ip da máquina local
+mail		A 	192.168.1.72  ;alterar para ip da máquina local
 ;app			A	IP de outro servidor DNS para redirecionar para o servidor web de outro usuário
 www			CNAME	ns1
 ;
