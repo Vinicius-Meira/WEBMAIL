@@ -1325,3 +1325,672 @@ Stack trace:
 [00:40:20.811][23bdf1d4] AJAX[DATA]: {"Action":"AppDelayStart","Result":true,"Time":423}
 [00:40:20.878][23bdf1d4] INFO[MEMORY]: Memory peak usage: 2MB
 [00:40:20.881][23bdf1d4] INFO[TIME]: Time delta: 0.43728303909302
+
+[00:41:45.605][076203f8] INFO[DATA]: [DATE:14.02.23][OFFSET:-00][RL:1.16.0][PHP:7.4.3-4ubuntu2.17][IP:172.20.0.3][PID:176][Apache/2.4.41 (Ubuntu)][apache2handler]
+[00:41:45.608][076203f8] INFO[DATA]: [APC:off][MB:off][PDO:~][Streams:tcp,udp,unix,udg,ssl,tls,tlsv1.0,tlsv1.1,tlsv1.2,tlsv1.3]
+[00:41:45.611][076203f8] REQUEST[NOTE]: [POST] https://localhost/rainloop/?/Ajax/&q[]=/_Z01aXiyCx1Tx8VvtNSlNvpqzEqjs6H4mx6xVc3Dujs9apBMHuZXJNlSJYXg2ZgaUnfLHkzeMt--poWv_YrC-WFm3BSQJqJ2Q-UTw9uIbge7CtQSCSkh8qcePa7GHDrRyo6jr-JnzenmoBZPztY974Dg8ZTLfIUz0mjS6WJ54mAuJQPmY53VI0B5sBFkbD8xWaUk242UqrKavBkO6ZAlyWXJMSjXgjqOWQzowB_lfBS2QXH21DnNUJc0JZlTpdJjxnpJauuDMYZ-4954BV6cHYvQaZSJWyXYlZ4JvoBj3F_NFmsHC1u1SSCE8ayQGPV2hnMTgJw/
+[00:41:45.625][076203f8] AJAX[NOTE]: Action: DoFolderInformation
+[00:41:45.628][076203f8] POST[DATA]: {"Folder":"INBOX","FlagsUids":"","UidNext":"2","Action":"FolderInformation","XToken":"74a9b2544ab7ce8b67e3e9a3eec7b73f"}
+[00:41:45.794][076203f8] IMAP[NOTE]: Start connection to "tcp://mail.asa.br:143"
+[00:41:45.804][076203f8] IMAP[NOTE]: Connected (success)
+[00:41:45.827][076203f8] IMAP[DATA]: < * OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE LITERAL+ STARTTLS AUTH=PLAIN] Dovecot (Ubuntu) ready.\r\n
+[00:41:45.838][076203f8] IMAP[DATA]: > TAG1 AUTHENTICATE PLAIN\r\n
+[00:41:45.841][076203f8] IMAP[DATA]: < + \r\n
+[00:41:45.844][076203f8] IMAP[SECURE]: > *******\r\n
+[00:41:45.857][076203f8] IMAP[DATA]: < TAG1 OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE] Logged in\r\n
+[00:41:45.869][076203f8] IMAP[DATA]: > TAG2 CAPABILITY\r\n
+[00:41:45.872][076203f8] IMAP[DATA]: < * CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE\r\n
+[00:41:45.875][076203f8] IMAP[DATA]: < TAG2 OK Capability completed (0.001 + 0.000 secs).\r\n
+[00:41:45.878][076203f8] IMAP[DATA]: > TAG3 STATUS "INBOX" (MESSAGES UNSEEN UIDNEXT HIGHESTMODSEQ)\r\n
+[00:41:45.881][076203f8] IMAP[DATA]: < * STATUS INBOX (MESSAGES 1 UIDNEXT 2 UNSEEN 0 HIGHESTMODSEQ 3)\r\n
+[00:41:45.884][076203f8] IMAP[DATA]: < TAG3 OK Status completed (0.001 + 0.000 secs).\r\n
+[00:41:45.887][076203f8] AJAX[DATA]: {"Action":"FolderInformation","Result":{"Folder":"INBOX","Hash":"9e4889d886d2603847c70e0c4b5938bb","MessageCount":1,"MessageUnseenCount":0,"UidNext":"2","Flags":[],"HighestModSeq":"3","NewMessages":[],"Version":"1.16.0"},"Time":500}
+[00:41:45.909][076203f8] IMAP[DATA]: > TAG4 LOGOUT\r\n
+[00:41:45.912][076203f8] IMAP[DATA]: < * BYE Logging out\r\n
+[00:41:45.915][076203f8] IMAP[DATA]: < TAG4 OK Logout completed (0.001 + 0.000 secs).\r\n
+[00:41:45.918][076203f8] IMAP[NOTE]: Disconnected from "tcp://mail.asa.br:143" (success)
+[00:41:45.921][076203f8] INFO[MEMORY]: Memory peak usage: 2MB
+[00:41:45.924][076203f8] INFO[TIME]: Time delta: 0.48085498809814
+
+[00:42:54.128][94b54c77] INFO[DATA]: [DATE:14.02.23][OFFSET:-00][RL:1.16.0][PHP:7.4.3-4ubuntu2.17][IP:172.20.0.3][PID:231][Apache/2.4.41 (Ubuntu)][apache2handler]
+[00:42:54.132][94b54c77] INFO[DATA]: [APC:off][MB:off][PDO:~][Streams:tcp,udp,unix,udg,ssl,tls,tlsv1.0,tlsv1.1,tlsv1.2,tlsv1.3]
+[00:42:54.136][94b54c77] REQUEST[NOTE]: [GET] https://localhost/rainloop/?admin
+[00:42:54.332][94b54c77] INFO[MEMORY]: Memory peak usage: 2MB
+[00:42:54.336][94b54c77] INFO[TIME]: Time delta: 0.40491414070129
+
+[00:42:54.443][565d80e7] INFO[DATA]: [DATE:14.02.23][OFFSET:-00][RL:1.16.0][PHP:7.4.3-4ubuntu2.17][IP:172.20.0.3][PID:178][Apache/2.4.41 (Ubuntu)][apache2handler]
+[00:42:54.447][565d80e7] INFO[DATA]: [APC:off][MB:off][PDO:~][Streams:tcp,udp,unix,udg,ssl,tls,tlsv1.0,tlsv1.1,tlsv1.2,tlsv1.3]
+[00:42:54.451][565d80e7] REQUEST[NOTE]: [GET] https://localhost/rainloop/?/AdminAppData@no-mobile-0/_Z01aXiyCx1Tx8VvtNSlNvpqzEqjs6H4mx6xVc3Dujs9apBMHuZXJNlSJYXg2ZgaUnfLHkzeMt--poWv_YrC-WFm3BSQJqJ2Q-UTw9uIbge7CtQSCSkh8qcePa7GHDrRyo6jr-JnzenmoBZPztY974Dg8ZTLfIUz0mjS6WJ54mAuJQPmY53VI0B5sBFkbD8xWaUk242UqrKavBkO6ZAlyWXJMSjXgjqOWQzowB_lfBS2QXH21DnNUJc0JZlTpdJjxnpJauuDMYZ-4954BV6cHYvQaZSJWyXYlZ4JvoBj3F_NFmsHC1u1SSCE8ayQGPV2hnMTgJw/5596253775792894/
+[00:42:54.599][565d80e7] APPDATA[DATA]: if(window.__initAppData){window.__initAppData({"Auth":true,"AccountHash":"","AccountSignMe":false,"AuthAccountHash":"","MailToEmail":"","Email":"","DevEmail":"","DevPassword":"","Title":"RainLoop Webmail","LoadingDescription":"RainLoop","LoadingDescriptionEsc":"RainLoop","FaviconUrl":"","LoginDescription":"","LoginLogo":"","LoginBackground":"","LoginCss":"","UserLogo":"","UserLogoTitle":"","UserLogoMessage":"","UserCss":"","WelcomePageUrl":"","WelcomePageDisplay":"none","IncludeCss":"","IncludeBackground":"","LoginDefaultDomain":"asa.br","DetermineUserLanguage":true,"DetermineUserDomain":false,"UseLoginWelcomePage":false,"StartupUrl":"","SieveAllowFileintoInbox":false,"ContactsIsAllowed":false,"ChangePasswordIsAllowed":false,"RequireTwoFactor":false,"Community":true,"PremType":false,"Admin":[],"Capa":["FOLDERS","MESSAGELIST_ACTIONS","DANGEROUS_ACTIONS","RELOAD","QUOTA","SETTINGS","ADDITIONAL_ACCOUNTS","IDENTITIES","THEMES","USER_BACKGROUND","FILTERS","SIEVE","HELP","ATTACHMENTS_ACTIONS","MESSAGE_ACTIONS","COMPOSER","CONTACTS","SEARCH","SEARCH_ADV","GRAVATAR","ATTACHMENT_THUMBNAILS","PREFETCH","AUTOLOGOUT"],"Plugins":[],"System":{"version":"1.16.0","admin":true,"mobile":false,"mobileDevice":false,"webPath":"","webVersionPath":"rainloop\/v\/1.16.0\/","token":"74a9b2544ab7ce8b67e3e9a3eec7b73f","inIframe":false,"allowHtmlEditorSourceButton":false,"allowHtmlEditorBitiButtons":false,"allowCtrlEnterOnCompose":true,"customLoginLink":"","customLogoutLink":"","forgotPasswordLinkUrl":"","registrationLinkUrl":"","hideSubmitButton":true,"jsHash":"2912c62e08f2846ad78765f49cda8c14","useImapThread":true,"useImapSubscribe":true,"allowAppendMessage":false,"materialDesign":true,"folderSpecLimit":50,"faviconStatus":true,"allowCmdInterface":false,"useNativeScrollbars":false,"listPermanentFiltered":false,"themes":["Default","A","Blurred","DarkShine","Linen","Love","Snow","Squares","SquaresDark","Stripes","Wood","Xv","Clear"],"languages":["ar_SA","bg_BG","ca","ca_ES","cs_CZ","da_DK","de_DE","el_GR","en_GB","en_US","es_ES","et_EE","eu","fa_IR","fi_FI","fr_FR","hu_HU","id_ID","is_IS","it_IT","ja_JP","ko_KR","lt_LT","lv_LV","nb_NO","nl_NL","pl_PL","pt_BR","pt_PT","ro_RO","ru_RU","sk_SK","sl_SI","sv_SE","tr_TR","uk_UA","zh_CN","zh_TW"],"languagesAdmin":["ca","ca_ES","cs_CZ","da_DK","de_DE","en_US","es_ES","eu","fa_IR","fi_FI","fr_FR","hu_HU","id_ID","it_IT","ja_JP","lt_LT","nb_NO","nl_NL","pl_PL","pt_BR","ru_RU","sk_SK","sl_SI","sv_SE","zh_CN"],"appVersionType":"community","attachmentsActions":[],"adminHostUse":false,"adminPath":"admin","allowAdminPanel":true},"AdminDomain":"localhost","AdminLogin":"admin","UseTokenProtection":true,"EnabledPlugins":false,"VerifySslCertificate":false,"AllowSelfSigned":true,"MySqlIsSupported":false,"SQLiteIsSupported":false,"PostgreSqlIsSupported":false,"ContactsEnable":false,"ContactsSync":false,"ContactsPdoType":"sqlite","ContactsPdoDsn":"mysql:host=127.0.0.1;port=3306;dbname=rainloop","ContactsPdoUser":"root","ContactsPdoPassword":"********","AllowGoogleSocial":false,"AllowGoogleSocialAuth":false,"AllowGoogleSocialAuthGmail":false,"AllowGoogleSocialDrive":false,"AllowGoogleSocialPreview":false,"GoogleClientID":"","GoogleClientSecret":"","GoogleApiKey":"","AllowFacebookSocial":false,"FacebookAppID":"","FacebookAppSecret":"","AllowTwitterSocial":false,"TwitterConsumerKey":"","TwitterConsumerSecret":"","AllowDropboxSocial":false,"DropboxApiKey":"","SubscriptionEnabled":false,"WeakPassword":true,"CoreAccess":true,"PhpUploadSizes":{"upload_max_filesize":"2M","post_max_size":"8M"},"SupportedFacebookSocial":true,"ProjectHash":"1c6a6bc68ba5f92d85485ab98a7fc6d4","NewMoveToFolder":true,"AllowLanguagesOnSettings":true,"AllowLanguagesOnLogin":true,"AttachmentLimit":26214400,"SignMe":"DefaultOff","UseLocalProxyForExternalImages":false,"ShowImages":false,"MPP":20,"SoundNotification":false,"DesktopNotifications":false,"Layout":1,"EditorDefaultType":"Html","UseCheckboxesInList":true,"AutoLogout":30,"UseThreads":false,"AllowDraftAutosave":true,"ReplySameFolder":false,"ContactsAutosave":true,"EnableTwoFactor":false,"ParentEmail":"","InterfaceAnimation":true,"UserBackgroundName":"","UserBackgroundHash":"","Theme":"Blurred","NewThemeLink":".\/?\/Css\/0\/Admin\/-\/Blurred\/-\/1c6a6bc68ba5f92d85485ab98a7fc6d4\/Hash\/-\/","Language":"pt_BR","LanguageAdmin":"pt_BR","UserLanguageRaw":"pt_BR","UserLanguage":"pt_BR","UserLanguageAdmin":"pt_BR","PluginsLink":"","LangLink":".\/?\/Lang\/0\/Admin\/pt_BR\/1c6a6bc68ba5f92d85485ab98a7fc6d4\/","StaticLibJsLink":"rainloop\/v\/1.16.0\/static\/js\/min\/libs.min.js?community","StaticAppJsLink":"rainloop\/v\/1.16.0\/static\/js\/min\/admin.min.js?community","StaticAppJsNextLink":"rainloop\/v\/1.16.0\/static\/js\/admin.next.js?community","StaticEditorJsLink":"rainloop\/v\/1.16.0\/static\/ckeditor\/ckeditor.js?community"});}
+[00:42:54.604][565d80e7] INFO[MEMORY]: Memory peak usage: 2MB
+[00:42:54.607][565d80e7] INFO[TIME]: Time delta: 0.20905804634094
+
+[00:45:20.924][08c967fb] INFO[DATA]: [DATE:14.02.23][OFFSET:-00][RL:1.16.0][PHP:7.4.3-4ubuntu2.17][IP:172.20.0.3][PID:177][Apache/2.4.41 (Ubuntu)][apache2handler]
+[00:45:20.928][08c967fb] INFO[DATA]: [APC:off][MB:off][PDO:~][Streams:tcp,udp,unix,udg,ssl,tls,tlsv1.0,tlsv1.1,tlsv1.2,tlsv1.3]
+[00:45:20.931][08c967fb] REQUEST[NOTE]: [POST] https://localhost/rainloop/?/Ajax/&q[]=/0/
+[00:45:20.948][08c967fb] AJAX[NOTE]: Action: DoAdminDomainList
+[00:45:20.951][08c967fb] POST[DATA]: {"IncludeAliases":"1","Action":"AdminDomainList","XToken":"74a9b2544ab7ce8b67e3e9a3eec7b73f"}
+[00:45:21.086][08c967fb] AJAX[DATA]: {"Action":"AdminDomainList","Result":{"asa.br":[true,false],"gmail.com":[true,false],"mail.asa.br":[true,false],"outlook.com":[true,false],"qq.com":[false,false],"yahoo.com":[false,false]},"Time":413}
+[00:45:21.158][08c967fb] INFO[MEMORY]: Memory peak usage: 2MB
+[00:45:21.162][08c967fb] INFO[TIME]: Time delta: 0.42897701263428
+
+[00:45:33.466][249a8247] INFO[DATA]: [DATE:14.02.23][OFFSET:-00][RL:1.16.0][PHP:7.4.3-4ubuntu2.17][IP:172.20.0.3][PID:185][Apache/2.4.41 (Ubuntu)][apache2handler]
+[00:45:33.469][249a8247] INFO[DATA]: [APC:off][MB:off][PDO:~][Streams:tcp,udp,unix,udg,ssl,tls,tlsv1.0,tlsv1.1,tlsv1.2,tlsv1.3]
+[00:45:33.472][249a8247] REQUEST[NOTE]: [GET] https://localhost/rainloop/?admin
+[00:45:33.669][249a8247] INFO[MEMORY]: Memory peak usage: 2MB
+[00:45:33.672][249a8247] INFO[TIME]: Time delta: 0.4098379611969
+
+[00:45:33.802][6a05cc6d] INFO[DATA]: [DATE:14.02.23][OFFSET:-00][RL:1.16.0][PHP:7.4.3-4ubuntu2.17][IP:172.20.0.3][PID:179][Apache/2.4.41 (Ubuntu)][apache2handler]
+[00:45:33.805][6a05cc6d] INFO[DATA]: [APC:off][MB:off][PDO:~][Streams:tcp,udp,unix,udg,ssl,tls,tlsv1.0,tlsv1.1,tlsv1.2,tlsv1.3]
+[00:45:33.809][6a05cc6d] REQUEST[NOTE]: [GET] https://localhost/rainloop/?/AdminAppData@no-mobile-0/0/9047511016497847/
+[00:45:33.966][6a05cc6d] APPDATA[DATA]: if(window.__initAppData){window.__initAppData({"Auth":true,"AccountHash":"","AccountSignMe":false,"AuthAccountHash":"","MailToEmail":"","Email":"","DevEmail":"","DevPassword":"","Title":"RainLoop Webmail","LoadingDescription":"RainLoop","LoadingDescriptionEsc":"RainLoop","FaviconUrl":"","LoginDescription":"","LoginLogo":"","LoginBackground":"","LoginCss":"","UserLogo":"","UserLogoTitle":"","UserLogoMessage":"","UserCss":"","WelcomePageUrl":"","WelcomePageDisplay":"none","IncludeCss":"","IncludeBackground":"","LoginDefaultDomain":"asa.br","DetermineUserLanguage":true,"DetermineUserDomain":false,"UseLoginWelcomePage":false,"StartupUrl":"","SieveAllowFileintoInbox":false,"ContactsIsAllowed":false,"ChangePasswordIsAllowed":false,"RequireTwoFactor":false,"Community":true,"PremType":false,"Admin":[],"Capa":["FOLDERS","MESSAGELIST_ACTIONS","DANGEROUS_ACTIONS","RELOAD","QUOTA","SETTINGS","ADDITIONAL_ACCOUNTS","IDENTITIES","THEMES","USER_BACKGROUND","FILTERS","SIEVE","HELP","ATTACHMENTS_ACTIONS","MESSAGE_ACTIONS","COMPOSER","CONTACTS","SEARCH","SEARCH_ADV","GRAVATAR","ATTACHMENT_THUMBNAILS","PREFETCH","AUTOLOGOUT"],"Plugins":[],"System":{"version":"1.16.0","admin":true,"mobile":false,"mobileDevice":false,"webPath":"","webVersionPath":"rainloop\/v\/1.16.0\/","token":"74a9b2544ab7ce8b67e3e9a3eec7b73f","inIframe":false,"allowHtmlEditorSourceButton":false,"allowHtmlEditorBitiButtons":false,"allowCtrlEnterOnCompose":true,"customLoginLink":"","customLogoutLink":"","forgotPasswordLinkUrl":"","registrationLinkUrl":"","hideSubmitButton":true,"jsHash":"2912c62e08f2846ad78765f49cda8c14","useImapThread":true,"useImapSubscribe":true,"allowAppendMessage":false,"materialDesign":true,"folderSpecLimit":50,"faviconStatus":true,"allowCmdInterface":false,"useNativeScrollbars":false,"listPermanentFiltered":false,"themes":["Default","A","Blurred","DarkShine","Linen","Love","Snow","Squares","SquaresDark","Stripes","Wood","Xv","Clear"],"languages":["ar_SA","bg_BG","ca","ca_ES","cs_CZ","da_DK","de_DE","el_GR","en_GB","en_US","es_ES","et_EE","eu","fa_IR","fi_FI","fr_FR","hu_HU","id_ID","is_IS","it_IT","ja_JP","ko_KR","lt_LT","lv_LV","nb_NO","nl_NL","pl_PL","pt_BR","pt_PT","ro_RO","ru_RU","sk_SK","sl_SI","sv_SE","tr_TR","uk_UA","zh_CN","zh_TW"],"languagesAdmin":["ca","ca_ES","cs_CZ","da_DK","de_DE","en_US","es_ES","eu","fa_IR","fi_FI","fr_FR","hu_HU","id_ID","it_IT","ja_JP","lt_LT","nb_NO","nl_NL","pl_PL","pt_BR","ru_RU","sk_SK","sl_SI","sv_SE","zh_CN"],"appVersionType":"community","attachmentsActions":[],"adminHostUse":false,"adminPath":"admin","allowAdminPanel":true},"AdminDomain":"localhost","AdminLogin":"admin","UseTokenProtection":true,"EnabledPlugins":false,"VerifySslCertificate":false,"AllowSelfSigned":true,"MySqlIsSupported":false,"SQLiteIsSupported":false,"PostgreSqlIsSupported":false,"ContactsEnable":false,"ContactsSync":false,"ContactsPdoType":"sqlite","ContactsPdoDsn":"mysql:host=127.0.0.1;port=3306;dbname=rainloop","ContactsPdoUser":"root","ContactsPdoPassword":"********","AllowGoogleSocial":false,"AllowGoogleSocialAuth":false,"AllowGoogleSocialAuthGmail":false,"AllowGoogleSocialDrive":false,"AllowGoogleSocialPreview":false,"GoogleClientID":"","GoogleClientSecret":"","GoogleApiKey":"","AllowFacebookSocial":false,"FacebookAppID":"","FacebookAppSecret":"","AllowTwitterSocial":false,"TwitterConsumerKey":"","TwitterConsumerSecret":"","AllowDropboxSocial":false,"DropboxApiKey":"","SubscriptionEnabled":false,"WeakPassword":true,"CoreAccess":true,"PhpUploadSizes":{"upload_max_filesize":"2M","post_max_size":"8M"},"SupportedFacebookSocial":true,"ProjectHash":"1c6a6bc68ba5f92d85485ab98a7fc6d4","NewMoveToFolder":true,"AllowLanguagesOnSettings":true,"AllowLanguagesOnLogin":true,"AttachmentLimit":26214400,"SignMe":"DefaultOff","UseLocalProxyForExternalImages":false,"ShowImages":false,"MPP":20,"SoundNotification":false,"DesktopNotifications":false,"Layout":1,"EditorDefaultType":"Html","UseCheckboxesInList":true,"AutoLogout":30,"UseThreads":false,"AllowDraftAutosave":true,"ReplySameFolder":false,"ContactsAutosave":true,"EnableTwoFactor":false,"ParentEmail":"","InterfaceAnimation":true,"UserBackgroundName":"","UserBackgroundHash":"","Theme":"Blurred","NewThemeLink":".\/?\/Css\/0\/Admin\/-\/Blurred\/-\/1c6a6bc68ba5f92d85485ab98a7fc6d4\/Hash\/-\/","Language":"pt_BR","LanguageAdmin":"pt_BR","UserLanguageRaw":"pt_BR","UserLanguage":"pt_BR","UserLanguageAdmin":"pt_BR","PluginsLink":"","LangLink":".\/?\/Lang\/0\/Admin\/pt_BR\/1c6a6bc68ba5f92d85485ab98a7fc6d4\/","StaticLibJsLink":"rainloop\/v\/1.16.0\/static\/js\/min\/libs.min.js?community","StaticAppJsLink":"rainloop\/v\/1.16.0\/static\/js\/min\/admin.min.js?community","StaticAppJsNextLink":"rainloop\/v\/1.16.0\/static\/js\/admin.next.js?community","StaticEditorJsLink":"rainloop\/v\/1.16.0\/static\/ckeditor\/ckeditor.js?community"});}
+[00:45:33.969][6a05cc6d] INFO[MEMORY]: Memory peak usage: 2MB
+[00:45:33.973][6a05cc6d] INFO[TIME]: Time delta: 0.21865510940552
+
+[00:45:34.159][ed58634b] INFO[DATA]: [DATE:14.02.23][OFFSET:-00][RL:1.16.0][PHP:7.4.3-4ubuntu2.17][IP:172.20.0.3][PID:178][Apache/2.4.41 (Ubuntu)][apache2handler]
+[00:45:34.164][ed58634b] INFO[DATA]: [APC:off][MB:off][PDO:~][Streams:tcp,udp,unix,udg,ssl,tls,tlsv1.0,tlsv1.1,tlsv1.2,tlsv1.3]
+[00:45:34.167][ed58634b] REQUEST[NOTE]: [POST] https://localhost/rainloop/?/Ajax/&q[]=/0/
+[00:45:34.171][ed58634b] AJAX[NOTE]: Action: DoAdminDomainList
+[00:45:34.175][ed58634b] POST[DATA]: {"IncludeAliases":"1","Action":"AdminDomainList","XToken":"74a9b2544ab7ce8b67e3e9a3eec7b73f"}
+[00:45:34.269][ed58634b] AJAX[DATA]: {"Action":"AdminDomainList","Result":{"asa.br":[true,false],"gmail.com":[true,false],"mail.asa.br":[true,false],"outlook.com":[true,false],"qq.com":[false,false],"yahoo.com":[false,false]},"Time":185}
+[00:45:34.273][ed58634b] INFO[MEMORY]: Memory peak usage: 2MB
+[00:45:34.278][ed58634b] INFO[TIME]: Time delta: 0.16494607925415
+
+[00:45:37.129][1d620333] INFO[DATA]: [DATE:14.02.23][OFFSET:-00][RL:1.16.0][PHP:7.4.3-4ubuntu2.17][IP:172.20.0.3][PID:177][Apache/2.4.41 (Ubuntu)][apache2handler]
+[00:45:37.132][1d620333] INFO[DATA]: [APC:off][MB:off][PDO:~][Streams:tcp,udp,unix,udg,ssl,tls,tlsv1.0,tlsv1.1,tlsv1.2,tlsv1.3]
+[00:45:37.136][1d620333] REQUEST[NOTE]: [GET] https://localhost/rainloop/
+[00:45:37.276][1d620333] INFO[MEMORY]: Memory peak usage: 2MB
+[00:45:37.279][1d620333] INFO[TIME]: Time delta: 0.27123689651489
+
+[00:45:37.434][19a9de6d] INFO[DATA]: [DATE:14.02.23][OFFSET:-00][RL:1.16.0][PHP:7.4.3-4ubuntu2.17][IP:172.20.0.3][PID:231][Apache/2.4.41 (Ubuntu)][apache2handler]
+[00:45:37.439][19a9de6d] INFO[DATA]: [APC:off][MB:off][PDO:~][Streams:tcp,udp,unix,udg,ssl,tls,tlsv1.0,tlsv1.1,tlsv1.2,tlsv1.3]
+[00:45:37.444][19a9de6d] REQUEST[NOTE]: [GET] https://localhost/rainloop/?/AppData@no-mobile-0/0/388594343557205/
+[00:45:37.563][19a9de6d] APPDATA[DATA]: if(window.__initAppData){window.__initAppData({"Auth":false,"AccountHash":"","AccountSignMe":false,"AuthAccountHash":"","MailToEmail":"","Email":"","DevEmail":"","DevPassword":"","Title":"RainLoop Webmail","LoadingDescription":"RainLoop","LoadingDescriptionEsc":"RainLoop","FaviconUrl":"","LoginDescription":"","LoginLogo":"","LoginBackground":"","LoginCss":"","UserLogo":"","UserLogoTitle":"","UserLogoMessage":"","UserCss":"","WelcomePageUrl":"","WelcomePageDisplay":"","IncludeCss":"","IncludeBackground":"","LoginDefaultDomain":"asa.br","DetermineUserLanguage":true,"DetermineUserDomain":false,"UseLoginWelcomePage":false,"StartupUrl":"","SieveAllowFileintoInbox":false,"ContactsIsAllowed":false,"ChangePasswordIsAllowed":false,"RequireTwoFactor":false,"Community":true,"PremType":false,"Admin":[],"Capa":["FOLDERS","MESSAGELIST_ACTIONS","DANGEROUS_ACTIONS","RELOAD","QUOTA","SETTINGS","ADDITIONAL_ACCOUNTS","IDENTITIES","THEMES","USER_BACKGROUND","FILTERS","HELP","ATTACHMENTS_ACTIONS","MESSAGE_ACTIONS","COMPOSER","CONTACTS","SEARCH","SEARCH_ADV","GRAVATAR","ATTACHMENT_THUMBNAILS","PREFETCH","AUTOLOGOUT"],"Plugins":[],"System":{"version":"1.16.0","admin":false,"mobile":false,"mobileDevice":false,"webPath":"","webVersionPath":"rainloop\/v\/1.16.0\/","token":"74a9b2544ab7ce8b67e3e9a3eec7b73f","inIframe":false,"allowHtmlEditorSourceButton":false,"allowHtmlEditorBitiButtons":false,"allowCtrlEnterOnCompose":true,"customLoginLink":"","customLogoutLink":"","forgotPasswordLinkUrl":"","registrationLinkUrl":"","hideSubmitButton":true,"jsHash":"2912c62e08f2846ad78765f49cda8c14","useImapThread":true,"useImapSubscribe":true,"allowAppendMessage":false,"materialDesign":true,"folderSpecLimit":50,"faviconStatus":true,"allowCmdInterface":false,"useNativeScrollbars":false,"listPermanentFiltered":false,"themes":["Default","A","Blurred","DarkShine","Linen","Love","Snow","Squares","SquaresDark","Stripes","Wood","Xv","Clear"],"languages":["ar_SA","bg_BG","ca","ca_ES","cs_CZ","da_DK","de_DE","el_GR","en_GB","en_US","es_ES","et_EE","eu","fa_IR","fi_FI","fr_FR","hu_HU","id_ID","is_IS","it_IT","ja_JP","ko_KR","lt_LT","lv_LV","nb_NO","nl_NL","pl_PL","pt_BR","pt_PT","ro_RO","ru_RU","sk_SK","sl_SI","sv_SE","tr_TR","uk_UA","zh_CN","zh_TW"],"languagesAdmin":["ca","ca_ES","cs_CZ","da_DK","de_DE","en_US","es_ES","eu","fa_IR","fi_FI","fr_FR","hu_HU","id_ID","it_IT","ja_JP","lt_LT","nb_NO","nl_NL","pl_PL","pt_BR","ru_RU","sk_SK","sl_SI","sv_SE","zh_CN"],"appVersionType":"community","attachmentsActions":[]},"AdditionalLoginError":"","AllowGoogleSocial":false,"AllowGoogleSocialAuth":false,"AllowGoogleSocialAuthGmail":false,"AllowGoogleSocialDrive":false,"AllowGoogleSocialPreview":false,"GoogleClientID":"","GoogleApiKey":"","AllowFacebookSocial":false,"AllowTwitterSocial":false,"AllowDropboxSocial":false,"DropboxApiKey":"","SupportedFacebookSocial":true,"ProjectHash":"1c6a6bc68ba5f92d85485ab98a7fc6d4","NewMoveToFolder":true,"AllowLanguagesOnSettings":true,"AllowLanguagesOnLogin":true,"AttachmentLimit":26214400,"SignMe":"DefaultOff","UseLocalProxyForExternalImages":false,"ShowImages":false,"MPP":20,"SoundNotification":false,"DesktopNotifications":false,"Layout":1,"EditorDefaultType":"Html","UseCheckboxesInList":true,"AutoLogout":30,"UseThreads":false,"AllowDraftAutosave":true,"ReplySameFolder":false,"ContactsAutosave":true,"EnableTwoFactor":false,"ParentEmail":"","InterfaceAnimation":true,"UserBackgroundName":"","UserBackgroundHash":"","Theme":"Blurred","NewThemeLink":".\/?\/Css\/0\/User\/-\/Blurred\/-\/1c6a6bc68ba5f92d85485ab98a7fc6d4\/Hash\/-\/","Language":"pt_BR","LanguageAdmin":"pt_BR","UserLanguageRaw":"pt_BR","UserLanguage":"pt_BR","UserLanguageAdmin":"pt_BR","PluginsLink":"","LangLink":".\/?\/Lang\/0\/App\/pt_BR\/1c6a6bc68ba5f92d85485ab98a7fc6d4\/","StaticLibJsLink":"rainloop\/v\/1.16.0\/static\/js\/min\/libs.min.js?community","StaticAppJsLink":"rainloop\/v\/1.16.0\/static\/js\/min\/app.min.js?community","StaticAppJsNextLink":"rainloop\/v\/1.16.0\/static\/js\/app.next.js?community","StaticEditorJsLink":"rainloop\/v\/1.16.0\/static\/ckeditor\/ckeditor.js?community"});}
+[00:45:37.567][19a9de6d] INFO[MEMORY]: Memory peak usage: 2MB
+[00:45:37.570][19a9de6d] INFO[TIME]: Time delta: 0.18629598617554
+
+[00:45:46.482][42aba9e5] INFO[DATA]: [DATE:14.02.23][OFFSET:-00][RL:1.16.0][PHP:7.4.3-4ubuntu2.17][IP:172.20.0.3][PID:179][Apache/2.4.41 (Ubuntu)][apache2handler]
+[00:45:46.485][42aba9e5] INFO[DATA]: [APC:off][MB:off][PDO:~][Streams:tcp,udp,unix,udg,ssl,tls,tlsv1.0,tlsv1.1,tlsv1.2,tlsv1.3]
+[00:45:46.490][42aba9e5] REQUEST[NOTE]: [POST] https://localhost/rainloop/?/Ajax/&q[]=/0/
+[00:45:46.507][42aba9e5] AJAX[NOTE]: Action: DoLogin
+[00:45:46.511][42aba9e5] POST[DATA]: {"Email":"vinicius","Login":"","Password":"*******","Language":"","AdditionalCode":"","AdditionalCodeSignMe":"0","SignMe":"0","Action":"Login","XToken":"74a9b2544ab7ce8b67e3e9a3eec7b73f"}
+[00:45:46.515][42aba9e5] LOGIN[DATA]: The email address "vinicius" is not complete
+[00:45:46.518][42aba9e5] LOGIN[DATA]: Default domain "asa.br" was used. (vinicius > vinicius@asa.br)
+[00:45:46.696][42aba9e5] IMAP[NOTE]: Start connection to "tcp://mail.asa.br:143"
+[00:45:46.706][42aba9e5] IMAP[NOTE]: Connected (success)
+[00:45:46.729][42aba9e5] IMAP[DATA]: < * OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE LITERAL+ STARTTLS AUTH=PLAIN] Dovecot (Ubuntu) ready.\r\n
+[00:45:46.742][42aba9e5] IMAP[DATA]: > TAG1 AUTHENTICATE PLAIN\r\n
+[00:45:46.744][42aba9e5] IMAP[DATA]: < + \r\n
+[00:45:46.748][42aba9e5] IMAP[SECURE]: > *******\r\n
+[00:45:46.761][42aba9e5] IMAP[DATA]: < TAG1 OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE] Logged in\r\n
+[00:45:46.822][42aba9e5] AJAX[DATA]: {"Action":"Login","Result":true,"Time":601}
+[00:45:46.848][42aba9e5] IMAP[DATA]: > TAG2 LOGOUT\r\n
+[00:45:46.852][42aba9e5] IMAP[DATA]: < * BYE Logging out\r\n
+[00:45:46.855][42aba9e5] IMAP[DATA]: < TAG2 OK Logout completed (0.001 + 0.000 secs).\r\n
+[00:45:46.859][42aba9e5] IMAP[NOTE]: Disconnected from "tcp://mail.asa.br:143" (success)
+[00:45:46.862][42aba9e5] INFO[MEMORY]: Memory peak usage: 2MB
+[00:45:46.865][42aba9e5] INFO[TIME]: Time delta: 0.60310888290405
+
+[00:45:47.067][417247cf] INFO[DATA]: [DATE:14.02.23][OFFSET:-00][RL:1.16.0][PHP:7.4.3-4ubuntu2.17][IP:172.20.0.3][PID:176][Apache/2.4.41 (Ubuntu)][apache2handler]
+[00:45:47.070][417247cf] INFO[DATA]: [APC:off][MB:off][PDO:~][Streams:tcp,udp,unix,udg,ssl,tls,tlsv1.0,tlsv1.1,tlsv1.2,tlsv1.3]
+[00:45:47.075][417247cf] REQUEST[NOTE]: [GET] https://localhost/rainloop/
+[00:45:47.170][417247cf] INFO[MEMORY]: Memory peak usage: 2MB
+[00:45:47.175][417247cf] INFO[TIME]: Time delta: 0.15102601051331
+
+[00:45:47.278][3893ac3d] INFO[DATA]: [DATE:14.02.23][OFFSET:-00][RL:1.16.0][PHP:7.4.3-4ubuntu2.17][IP:172.20.0.3][PID:175][Apache/2.4.41 (Ubuntu)][apache2handler]
+[00:45:47.281][3893ac3d] INFO[DATA]: [APC:off][MB:off][PDO:~][Streams:tcp,udp,unix,udg,ssl,tls,tlsv1.0,tlsv1.1,tlsv1.2,tlsv1.3]
+[00:45:47.285][3893ac3d] REQUEST[NOTE]: [GET] https://localhost/rainloop/?/AppData@no-mobile-0/0/6733262070343642/
+[00:45:47.505][3893ac3d] APPDATA[DATA]: if(window.__initAppData){window.__initAppData({"Auth":true,"AccountHash":"a6fc642f8f7f33e8576019fd10505f10","AccountSignMe":false,"AuthAccountHash":"_EthrNmy-KiXj63LVMlmRPsm1qoH6KzWV0pCrv2s1dU2AaR5ts8CA73vtfLiLica1MxoJee7BmcPzBAbMkndGEEpfdCCFAZnelQFbk-TAO0BX6LL4gjNK7vD_F2X5N8NfI3o0S8v6amlBk8VTR8YRU-gaP5J5OQlLZNRP-tGUfCT5RjPU0gpCKDduv0UOm1ORNwD5mW8_KLlqVkIcNbNtu2uLH3x5jfwqDqH_CPDXDYM3OJsvQoRrV5P88XfGE8ghtqD5YjQAPw676qkQ884AZuSMbblNLy4rnpX8VgYxgJQIQ70W9s7IU2mGWXbJR2VIXnY_j1R470k","MailToEmail":"","Email":"vinicius@asa.br","DevEmail":"","DevPassword":"","Title":"RainLoop Webmail","LoadingDescription":"RainLoop","LoadingDescriptionEsc":"RainLoop","FaviconUrl":"","LoginDescription":"","LoginLogo":"","LoginBackground":"","LoginCss":"","UserLogo":"","UserLogoTitle":"","UserLogoMessage":"","UserCss":"","WelcomePageUrl":"","WelcomePageDisplay":"","IncludeCss":"","IncludeBackground":"","LoginDefaultDomain":"asa.br","DetermineUserLanguage":true,"DetermineUserDomain":false,"UseLoginWelcomePage":false,"StartupUrl":"","SieveAllowFileintoInbox":false,"ContactsIsAllowed":false,"ChangePasswordIsAllowed":false,"RequireTwoFactor":false,"Community":true,"PremType":false,"Admin":[],"Capa":["FOLDERS","MESSAGELIST_ACTIONS","DANGEROUS_ACTIONS","RELOAD","QUOTA","SETTINGS","ADDITIONAL_ACCOUNTS","IDENTITIES","THEMES","USER_BACKGROUND","FILTERS","HELP","ATTACHMENTS_ACTIONS","MESSAGE_ACTIONS","COMPOSER","CONTACTS","SEARCH","SEARCH_ADV","GRAVATAR","ATTACHMENT_THUMBNAILS","PREFETCH","AUTOLOGOUT"],"Plugins":[],"System":{"version":"1.16.0","admin":false,"mobile":false,"mobileDevice":false,"webPath":"","webVersionPath":"rainloop\/v\/1.16.0\/","token":"74a9b2544ab7ce8b67e3e9a3eec7b73f","inIframe":false,"allowHtmlEditorSourceButton":false,"allowHtmlEditorBitiButtons":false,"allowCtrlEnterOnCompose":true,"customLoginLink":"","customLogoutLink":"","forgotPasswordLinkUrl":"","registrationLinkUrl":"","hideSubmitButton":true,"jsHash":"2912c62e08f2846ad78765f49cda8c14","useImapThread":true,"useImapSubscribe":true,"allowAppendMessage":false,"materialDesign":true,"folderSpecLimit":50,"faviconStatus":true,"allowCmdInterface":false,"useNativeScrollbars":false,"listPermanentFiltered":false,"themes":["Default","A","Blurred","DarkShine","Linen","Love","Snow","Squares","SquaresDark","Stripes","Wood","Xv","Clear"],"languages":["ar_SA","bg_BG","ca","ca_ES","cs_CZ","da_DK","de_DE","el_GR","en_GB","en_US","es_ES","et_EE","eu","fa_IR","fi_FI","fr_FR","hu_HU","id_ID","is_IS","it_IT","ja_JP","ko_KR","lt_LT","lv_LV","nb_NO","nl_NL","pl_PL","pt_BR","pt_PT","ro_RO","ru_RU","sk_SK","sl_SI","sv_SE","tr_TR","uk_UA","zh_CN","zh_TW"],"languagesAdmin":["ca","ca_ES","cs_CZ","da_DK","de_DE","en_US","es_ES","eu","fa_IR","fi_FI","fr_FR","hu_HU","id_ID","it_IT","ja_JP","lt_LT","nb_NO","nl_NL","pl_PL","pt_BR","ru_RU","sk_SK","sl_SI","sv_SE","zh_CN"],"appVersionType":"community","attachmentsActions":[]},"IncLogin":"vinicius","OutLogin":"vinicius","ContactsSyncIsAllowed":false,"ContactsSyncInterval":20,"EnableContactsSync":false,"ContactsSyncUrl":"","ContactsSyncUser":"","ContactsSyncPassword":"","AllowGoogleSocial":false,"AllowGoogleSocialAuth":false,"AllowGoogleSocialAuthGmail":false,"AllowGoogleSocialDrive":false,"AllowGoogleSocialPreview":false,"GoogleClientID":"","GoogleApiKey":"","AllowFacebookSocial":false,"AllowTwitterSocial":false,"AllowDropboxSocial":false,"DropboxApiKey":"","SupportedFacebookSocial":true,"ProjectHash":"4be3a4d6e5deaf5cec1ec8ff99f6c004","NewMoveToFolder":true,"AllowLanguagesOnSettings":true,"AllowLanguagesOnLogin":true,"AttachmentLimit":26214400,"SignMe":"DefaultOff","UseLocalProxyForExternalImages":false,"ShowImages":false,"MPP":20,"SoundNotification":false,"Desk*******Notifications":false,"Layout":1,"EditorDefaultType":"Html","UseCheckboxesInList":true,"AutoLogout":30,"UseThreads":false,"AllowDraftAutosave":true,"ReplySameFolder":false,"ContactsAutosave":true,"EnableTwoFactor":false,"ParentEmail":"","InterfaceAnimation":true,"UserBackgroundName":"","UserBackgroundHash":"","SentFolder":"Sent","DraftFolder":"Drafts","SpamFolder":"Junk E-mail","TrashFolder":"Deleted Items","ArchiveFolder":"Archive","NullFolder":"NullFolder","Theme":"Blurred","NewThemeLink":".\/?\/Css\/0\/User\/-\/Blurred\/-\/1c6a6bc68ba5f92d85485ab98a7fc6d4\/Hash\/-\/","Language":"pt_BR","LanguageAdmin":"pt_BR","UserLanguageRaw":"pt_BR","UserLanguage":"pt_BR","UserLanguageAdmin":"pt_BR","PluginsLink":"","LangLink":".\/?\/Lang\/0\/App\/pt_BR\/1c6a6bc68ba5f92d85485ab98a7fc6d4\/","StaticLibJsLink":"rainloop\/v\/1.16.0\/static\/js\/min\/libs.min.js?community","StaticAppJsLink":"rainloop\/v\/1.16.0\/static\/js\/min\/app.min.js?community","StaticAppJsNextLink":"rainloop\/v\/1.16.0\/static\/js\/app.next.js?community","StaticEditorJsLink":"rainloop\/v\/1.16.0\/static\/ckeditor\/ckeditor.js?community"});}
+[00:45:47.509][3893ac3d] INFO[MEMORY]: Memory peak usage: 2MB
+[00:45:47.512][3893ac3d] INFO[TIME]: Time delta: 0.27882719039917
+
+[00:45:47.633][0ad0526b] INFO[DATA]: [DATE:14.02.23][OFFSET:-00][RL:1.16.0][PHP:7.4.3-4ubuntu2.17][IP:172.20.0.3][PID:231][Apache/2.4.41 (Ubuntu)][apache2handler]
+[00:45:47.636][0ad0526b] INFO[DATA]: [APC:off][MB:off][PDO:~][Streams:tcp,udp,unix,udg,ssl,tls,tlsv1.0,tlsv1.1,tlsv1.2,tlsv1.3]
+[00:45:47.640][0ad0526b] REQUEST[NOTE]: [POST] https://localhost/rainloop/?/Ajax/&q[]=/_EthrNmy-KiXj63LVMlmRPsm1qoH6KzWV0pCrv2s1dU2AaR5ts8CA73vtfLiLica1MxoJee7BmcPzBAbMkndGEEpfdCCFAZnelQFbk-TAO0BX6LL4gjNK7vD_F2X5N8NfI3o0S8v6amlBk8VTR8YRU-gaP5J5OQlLZNRP-tGUfCT5RjPU0gpCKDduv0UOm1ORNwD5mW8_KLlqVkIcNbNtu2uLH3x5jfwqDqH_CPDXDYM3OJsvQoRrV5P88XfGE8ghtqD5YjQAPw676qkQ884AZuSMbblNLy4rnpX8VgYxgJQIQ70W9s7IU2mGWXbJR2VIXnY_j1R470k/
+[00:45:47.644][0ad0526b] AJAX[NOTE]: Action: DoFolders
+[00:45:47.648][0ad0526b] POST[DATA]: {"Action":"Folders","XToken":"74a9b2544ab7ce8b67e3e9a3eec7b73f"}
+[00:45:47.672][0ad0526b] IMAP[NOTE]: Start connection to "tcp://mail.asa.br:143"
+[00:45:47.676][0ad0526b] IMAP[NOTE]: Connected (success)
+[00:45:47.680][0ad0526b] IMAP[DATA]: < * OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE LITERAL+ STARTTLS AUTH=PLAIN] Dovecot (Ubuntu) ready.\r\n
+[00:45:47.683][0ad0526b] IMAP[DATA]: > TAG1 AUTHENTICATE PLAIN\r\n
+[00:45:47.686][0ad0526b] IMAP[DATA]: < + \r\n
+[00:45:47.690][0ad0526b] IMAP[SECURE]: > *******\r\n
+[00:45:47.699][0ad0526b] IMAP[DATA]: < TAG1 OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE] Logged in\r\n
+[00:45:47.704][0ad0526b] IMAP[DATA]: > TAG2 LSUB "" "*"\r\n
+[00:45:47.709][0ad0526b] IMAP[DATA]: < * LSUB (\Sent) "." Sent\r\n
+[00:45:47.713][0ad0526b] IMAP[DATA]: < * LSUB (\Drafts) "." Drafts\r\n
+[00:45:47.718][0ad0526b] IMAP[DATA]: < * LSUB () "." "Junk E-mail"\r\n
+[00:45:47.722][0ad0526b] IMAP[DATA]: < * LSUB () "." "Deleted Items"\r\n
+[00:45:47.726][0ad0526b] IMAP[DATA]: < * LSUB () "." Archive\r\n
+[00:45:47.730][0ad0526b] IMAP[DATA]: < TAG2 OK Lsub completed (0.001 + 0.000 secs).\r\n
+[00:45:47.746][0ad0526b] IMAP[DATA]: > TAG3 LIST "" "*"\r\n
+[00:45:47.749][0ad0526b] IMAP[DATA]: < * LIST (\HasNoChildren \UnMarked) "." Archive\r\n
+[00:45:47.752][0ad0526b] IMAP[DATA]: < * LIST (\HasNoChildren \UnMarked) "." "Deleted Items"\r\n
+[00:45:47.756][0ad0526b] IMAP[DATA]: < * LIST (\HasNoChildren \UnMarked) "." "Junk E-mail"\r\n
+[00:45:47.761][0ad0526b] IMAP[DATA]: < * LIST (\HasNoChildren \UnMarked \Drafts) "." Drafts\r\n
+[00:45:47.764][0ad0526b] IMAP[DATA]: < * LIST (\HasNoChildren \Marked \Sent) "." Sent\r\n
+[00:45:47.768][0ad0526b] IMAP[DATA]: < * LIST (\HasNoChildren) "." INBOX\r\n
+[00:45:47.772][0ad0526b] IMAP[DATA]: < TAG3 OK List completed (0.001 + 0.000 secs).\r\n
+[00:45:47.816][0ad0526b] IMAP[DATA]: > TAG4 CAPABILITY\r\n
+[00:45:47.819][0ad0526b] IMAP[DATA]: < * CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE\r\n
+[00:45:47.823][0ad0526b] IMAP[DATA]: < TAG4 OK Capability completed (0.001 + 0.000 secs).\r\n
+[00:45:47.828][0ad0526b] IMAP[DATA]: > TAG5 NAMESPACE\r\n
+[00:45:47.832][0ad0526b] IMAP[DATA]: < * NAMESPACE (("" ".")) NIL NIL\r\n
+[00:45:47.835][0ad0526b] IMAP[DATA]: < TAG5 OK Namespace completed (0.001 + 0.000 secs).\r\n
+[00:45:48.021][0ad0526b] AJAX[DATA]: {"Action":"Folders","Result":{"@Object":"Collection\/FolderCollection","@Count":6,"@Collection":[{"@Object":"Object\/Folder","Name":"INBOX","FullName":"INBOX","FullNameRaw":"INBOX","FullNameHash":"INBOX","Delimiter":".","HasVisibleSubFolders":false,"IsSubscribed":true,"IsExists":true,"IsSelectable":...
+[00:45:48.025][0ad0526b] IMAP[DATA]: > TAG6 LOGOUT\r\n
+[00:45:48.029][0ad0526b] IMAP[DATA]: < * BYE Logging out\r\n
+[00:45:48.032][0ad0526b] IMAP[DATA]: < TAG6 OK Logout completed (0.001 + 0.000 secs).\r\n
+[00:45:48.036][0ad0526b] IMAP[NOTE]: Disconnected from "tcp://mail.asa.br:143" (success)
+[00:45:48.040][0ad0526b] INFO[MEMORY]: Memory peak usage: 2MB
+[00:45:48.044][0ad0526b] INFO[TIME]: Time delta: 0.44188904762268
+
+
+[00:45:48.140][bbcb928e] INFO[DATA]: [DATE:14.02.23][OFFSET:-00][RL:1.16.0][PHP:7.4.3-4ubuntu2.17][IP:172.20.0.3][PID:177][Apache/2.4.41 (Ubuntu)][apache2handler]
+[00:45:48.140][2cb42da2] INFO[DATA]: [DATE:14.02.23][OFFSET:-00][RL:1.16.0][PHP:7.4.3-4ubuntu2.17][IP:172.20.0.3][PID:178][Apache/2.4.41 (Ubuntu)][apache2handler]
+[00:45:48.142][bbcb928e] INFO[DATA]: [APC:off][MB:off][PDO:~][Streams:tcp,udp,unix,udg,ssl,tls,tlsv1.0,tlsv1.1,tlsv1.2,tlsv1.3]
+[00:45:48.142][2cb42da2] INFO[DATA]: [APC:off][MB:off][PDO:~][Streams:tcp,udp,unix,udg,ssl,tls,tlsv1.0,tlsv1.1,tlsv1.2,tlsv1.3]
+[00:45:48.143][bbcb928e] REQUEST[NOTE]: [POST] https://localhost/rainloop/?/Ajax/&q[]=/_EthrNmy-KiXj63LVMlmRPsm1qoH6KzWV0pCrv2s1dU2AaR5ts8CA73vtfLiLica1MxoJee7BmcPzBAbMkndGEEpfdCCFAZnelQFbk-TAO0BX6LL4gjNK7vD_F2X5N8NfI3o0S8v6amlBk8VTR8YRU-gaP5J5OQlLZNRP-tGUfCT5RjPU0gpCKDduv0UOm1ORNwD5mW8_KLlqVkIcNbNtu2uLH3x5jfwqDqH_CPDXDYM3OJsvQoRrV5P88XfGE8ghtqD5YjQAPw676qkQ884AZuSMbblNLy4rnpX8VgYxgJQIQ70W9s7IU2mGWXbJR2VIXnY_j1R470k/
+[00:45:48.143][2cb42da2] REQUEST[NOTE]: [POST] https://localhost/rainloop/?/Ajax/&q[]=/_EthrNmy-KiXj63LVMlmRPsm1qoH6KzWV0pCrv2s1dU2AaR5ts8CA73vtfLiLica1MxoJee7BmcPzBAbMkndGEEpfdCCFAZnelQFbk-TAO0BX6LL4gjNK7vD_F2X5N8NfI3o0S8v6amlBk8VTR8YRU-gaP5J5OQlLZNRP-tGUfCT5RjPU0gpCKDduv0UOm1ORNwD5mW8_KLlqVkIcNbNtu2uLH3x5jfwqDqH_CPDXDYM3OJsvQoRrV5P88XfGE8ghtqD5YjQAPw676qkQ884AZuSMbblNLy4rnpX8VgYxgJQIQ70W9s7IU2mGWXbJR2VIXnY_j1R470k/
+[00:45:48.145][bbcb928e] AJAX[NOTE]: Action: DoFolderInformationMultiply
+[00:45:48.145][2cb42da2] AJAX[NOTE]: Action: DoAccountsAndIdentities
+[00:45:48.147][2cb42da2] POST[DATA]: {"Action":"AccountsAndIdentities","XToken":"74a9b2544ab7ce8b67e3e9a3eec7b73f"}
+[00:45:48.147][bbcb928e] POST[DATA]: {"Folders":["Archive","Deleted Items","Drafts","Junk E-mail","Sent"],"Action":"FolderInformationMultiply","XToken":"74a9b2544ab7ce8b67e3e9a3eec7b73f"}
+
+[00:45:48.155][bbcb928e] IMAP[NOTE]: Start connection to "tcp://mail.asa.br:143"
+[00:45:48.155][5b609d5a] INFO[DATA]: [DATE:14.02.23][OFFSET:-00][RL:1.16.0][PHP:7.4.3-4ubuntu2.17][IP:172.20.0.3][PID:185][Apache/2.4.41 (Ubuntu)][apache2handler]
+[00:45:48.156][bbcb928e] IMAP[NOTE]: Connected (success)
+[00:45:48.156][5b609d5a] INFO[DATA]: [APC:off][MB:off][PDO:~][Streams:tcp,udp,unix,udg,ssl,tls,tlsv1.0,tlsv1.1,tlsv1.2,tlsv1.3]
+[00:45:48.159][5b609d5a] REQUEST[NOTE]: [POST] https://localhost/rainloop/?/Ajax/&q[]=/_EthrNmy-KiXj63LVMlmRPsm1qoH6KzWV0pCrv2s1dU2AaR5ts8CA73vtfLiLica1MxoJee7BmcPzBAbMkndGEEpfdCCFAZnelQFbk-TAO0BX6LL4gjNK7vD_F2X5N8NfI3o0S8v6amlBk8VTR8YRU-gaP5J5OQlLZNRP-tGUfCT5RjPU0gpCKDduv0UOm1ORNwD5mW8_KLlqVkIcNbNtu2uLH3x5jfwqDqH_CPDXDYM3OJsvQoRrV5P88XfGE8ghtqD5YjQAPw676qkQ884AZuSMbblNLy4rnpX8VgYxgJQIQ70W9s7IU2mGWXbJR2VIXnY_j1R470k/
+[00:45:48.161][bbcb928e] IMAP[DATA]: < * OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE LITERAL+ STARTTLS AUTH=PLAIN] Dovecot (Ubuntu) ready.\r\n
+[00:45:48.161][5b609d5a] AJAX[NOTE]: Action: DoMessageList
+[00:45:48.162][bbcb928e] IMAP[DATA]: > TAG1 AUTHENTICATE PLAIN\r\n
+[00:45:48.162][5b609d5a] POST[DATA]: {"Folder":"INBOX","Offset":"0","Limit":"20","Search":"","UidNext":"","UseThreads":"0","ThreadUid":"","Action":"MessageList","XToken":"74a9b2544ab7ce8b67e3e9a3eec7b73f"}
+[00:45:48.164][bbcb928e] IMAP[DATA]: < + \r\n
+[00:45:48.165][bbcb928e] IMAP[SECURE]: > *******\r\n
+[00:45:48.173][2cb42da2] AJAX[DATA]: {"Action":"AccountsAndIdentities","Result":{"Accounts":["vinicius@asa.br"],"Identities":[{"@Object":"Object\/Identity","Id":"","Email":"vinicius@asa.br","Name":"","ReplyTo":"","Bcc":"","Signature":"","SignatureInsertBefore":false}]},"Time":58}
+[00:45:48.175][bbcb928e] IMAP[DATA]: < TAG1 OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE] Logged in\r\n
+[00:45:48.176][2cb42da2] INFO[MEMORY]: Memory peak usage: 2MB
+[00:45:48.177][2cb42da2] INFO[TIME]: Time delta: 0.05522084236145
+[00:45:48.178][5b609d5a] IMAP[NOTE]: Start connection to "tcp://mail.asa.br:143"
+[00:45:48.181][5b609d5a] IMAP[NOTE]: Connected (success)
+[00:45:48.186][5b609d5a] IMAP[DATA]: < * OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE LITERAL+ STARTTLS AUTH=PLAIN] Dovecot (Ubuntu) ready.\r\n
+[00:45:48.190][5b609d5a] IMAP[DATA]: > TAG1 AUTHENTICATE PLAIN\r\n
+[00:45:48.195][bbcb928e] IMAP[DATA]: > TAG2 CAPABILITY\r\n
+[00:45:48.194][5b609d5a] IMAP[DATA]: < + \r\n
+[00:45:48.196][5b609d5a] IMAP[SECURE]: > *******\r\n
+[00:45:48.196][bbcb928e] IMAP[DATA]: < * CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE\r\n
+[00:45:48.198][bbcb928e] IMAP[DATA]: < TAG2 OK Capability completed (0.001 + 0.000 secs).\r\n
+[00:45:48.201][bbcb928e] IMAP[DATA]: > TAG3 STATUS "Archive" (MESSAGES UNSEEN UIDNEXT HIGHESTMODSEQ)\r\n
+[00:45:48.205][5b609d5a] IMAP[DATA]: < TAG1 OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE] Logged in\r\n
+[00:45:48.204][bbcb928e] IMAP[DATA]: < * STATUS Archive (MESSAGES 0 UIDNEXT 1 UNSEEN 0 HIGHESTMODSEQ 1)\r\n
+[00:45:48.207][bbcb928e] IMAP[DATA]: < TAG3 OK Status completed (0.001 + 0.000 secs).\r\n
+[00:45:48.209][bbcb928e] IMAP[DATA]: > TAG4 STATUS "Deleted Items" (MESSAGES UNSEEN UIDNEXT HIGHESTMODSEQ)\r\n
+[00:45:48.212][bbcb928e] IMAP[DATA]: < * STATUS "Deleted Items" (MESSAGES 0 UIDNEXT 1 UNSEEN 0 HIGHESTMODSEQ 1)\r\n
+[00:45:48.214][bbcb928e] IMAP[DATA]: < TAG4 OK Status completed (0.001 + 0.000 secs).\r\n
+[00:45:48.214][5b609d5a] IMAP[DATA]: > TAG2 SELECT "INBOX"\r\n
+[00:45:48.215][bbcb928e] IMAP[DATA]: > TAG5 STATUS "Drafts" (MESSAGES UNSEEN UIDNEXT HIGHESTMODSEQ)\r\n
+[00:45:48.216][5b609d5a] IMAP[DATA]: < * FLAGS (\Answered \Flagged \Deleted \Seen \Draft)\r\n
+[00:45:48.216][bbcb928e] IMAP[DATA]: < * STATUS Drafts (MESSAGES 0 UIDNEXT 1 UNSEEN 0 HIGHESTMODSEQ 1)\r\n
+[00:45:48.216][5b609d5a] IMAP[DATA]: < * OK [PERMANENTFLAGS (\Answered \Flagged \Deleted \Seen \Draft \*)] Flags permitted.\r\n
+[00:45:48.217][bbcb928e] IMAP[DATA]: < TAG5 OK Status completed (0.001 + 0.000 secs).\r\n
+[00:45:48.217][5b609d5a] IMAP[DATA]: < * 1 EXISTS\r\n
+[00:45:48.218][bbcb928e] IMAP[DATA]: > TAG6 STATUS "Junk E-mail" (MESSAGES UNSEEN UIDNEXT HIGHESTMODSEQ)\r\n
+[00:45:48.218][5b609d5a] IMAP[DATA]: < * 0 RECENT\r\n
+[00:45:48.218][bbcb928e] IMAP[DATA]: < * STATUS "Junk E-mail" (MESSAGES 0 UIDNEXT 1 UNSEEN 0 HIGHESTMODSEQ 1)\r\n
+[00:45:48.219][5b609d5a] IMAP[DATA]: < * OK [UIDVALIDITY 1676334844] UIDs valid\r\n
+[00:45:48.219][bbcb928e] IMAP[DATA]: < TAG6 OK Status completed (0.001 + 0.000 secs).\r\n
+[00:45:48.220][5b609d5a] IMAP[DATA]: < * OK [UIDNEXT 2] Predicted next UID\r\n
+[00:45:48.220][bbcb928e] IMAP[DATA]: > TAG7 STATUS "Sent" (MESSAGES UNSEEN UIDNEXT HIGHESTMODSEQ)\r\n
+[00:45:48.221][5b609d5a] IMAP[DATA]: < * OK [HIGHESTMODSEQ 3] Highest\r\n
+[00:45:48.221][bbcb928e] IMAP[DATA]: < * STATUS Sent (MESSAGES 1 UIDNEXT 2 UNSEEN 0 HIGHESTMODSEQ 2)\r\n
+[00:45:48.221][5b609d5a] IMAP[DATA]: < TAG2 OK [READ-WRITE] Select completed (0.001 + 0.000 secs).\r\n
+[00:45:48.222][bbcb928e] IMAP[DATA]: < TAG7 OK Status completed (0.001 + 0.000 secs).\r\n
+[00:45:48.223][bbcb928e] AJAX[DATA]: {"Action":"FolderInformationMultiply","Result":{"List":[{"Folder":"Archive","Hash":"70ae3e099ab695f30957499194a24e32","MessageCount":0,"MessageUnseenCount":0,"UidNext":"1","Flags":[],"HighestModSeq":"1","NewMessages":[]},{"Folder":"Deleted Items","Hash":"c16216b7507b63c90517edf8c3d1dfe4","MessageCou...
+[00:45:48.228][bbcb928e] IMAP[DATA]: > TAG8 LOGOUT\r\n
+[00:45:48.230][bbcb928e] IMAP[DATA]: < * BYE Logging out\r\n
+[00:45:48.233][bbcb928e] IMAP[DATA]: < TAG8 OK Logout completed (0.001 + 0.000 secs).\r\n
+[00:45:48.236][bbcb928e] IMAP[NOTE]: Disconnected from "tcp://mail.asa.br:143" (success)
+[00:45:48.236][5b609d5a] IMAP[DATA]: > TAG3 CAPABILITY\r\n
+[00:45:48.238][bbcb928e] INFO[MEMORY]: Memory peak usage: 2MB
+[00:45:48.238][5b609d5a] IMAP[DATA]: < * CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE\r\n
+[00:45:48.239][bbcb928e] INFO[TIME]: Time delta: 0.11596012115479
+[00:45:48.239][5b609d5a] IMAP[DATA]: < TAG3 OK Capability completed (0.001 + 0.000 secs).\r\n
+[00:45:48.241][5b609d5a] IMAP[DATA]: > TAG4 STATUS "INBOX" (MESSAGES UNSEEN UIDNEXT HIGHESTMODSEQ)\r\n
+[00:45:48.245][5b609d5a] IMAP[DATA]: < * OK [HIGHESTMODSEQ 3] Highest\r\n
+[00:45:48.248][5b609d5a] IMAP[DATA]: < * STATUS INBOX (MESSAGES 1 UIDNEXT 2 UNSEEN 0 HIGHESTMODSEQ 3)\r\n
+[00:45:48.250][5b609d5a] IMAP[DATA]: < TAG4 OK [CLIENTBUG] Status on selected mailbox completed (0.001 + 0.000 secs).\r\n
+[00:45:48.282][5b609d5a] IMAP[DATA]: > TAG5 UID SORT (REVERSE DATE) US-ASCII UNDELETED\r\n
+[00:45:48.284][5b609d5a] IMAP[DATA]: < * SORT 1\r\n
+[00:45:48.286][5b609d5a] IMAP[DATA]: < TAG5 OK Sort completed (0.001 + 0.000 secs).\r\n
+[00:45:48.299][5b609d5a] INFO[DATA]: Save Serialized UIDS to cache ("INBOX" / UNDELETED) [count:1]
+[00:45:48.327][5b609d5a] IMAP[DATA]: > TAG6 UID FETCH 1 (UID RFC822.SIZE INTERNALDATE FLAGS BODYSTRUCTURE BODY.PEEK[HEADER.FIELDS (RETURN-PATH RECEIVED MIME-VERSION MESSAGE-ID CONTENT-TYPE FROM TO CC BCC SENDER REPLY-TO DELIVERED-TO IN-REPLY-TO REFERENCES DATE SUBJECT SENSITIVITY X-MSMAIL-PRIORITY IMPORTANCE X-PRIORITY X-DRAFT-INFO RETURN-RECEIPT-TO DISPOSITION-NOTIFICATION-TO X-CONFIRM-READING-TO AUTHENTICATION-RESULTS X-DKIM-AUTHENTICATION-RESULTS LIST-UNSUBSCRIBE)])\r\n
+[00:45:48.330][5b609d5a] IMAP[DATA]: < * 1 FETCH (UID 1 RFC822.SIZE 1181 INTERNALDATE "14-Feb-2023 00:35:56 +0000" FLAGS (\Seen) BODYSTRUCTURE (("text" "plain" ("charset" "utf-8") NIL NIL "quoted-printable" 23 1 NIL NIL NIL NIL)("text" "html" ("charset" "utf-8") NIL NIL "quoted-printable" 301 4 NIL NIL NIL NIL) "alternative" ("boundary" "--=_RainLoop_555_890063330.1676334956") NIL NIL NIL) BODY[HEADER.FIELDS (RETURN-PATH RECEIVED MIME-VERSION MESSAGE-ID CONTENT-TYPE FROM TO CC BCC SENDER REPLY-TO DELIVERED-TO IN-REPLY-TO REFERENCES DATE SUBJECT SENSITIVITY X-MSMAIL-PRIORITY IMPORTANCE X-PRIORITY X-DRAFT-INFO RETURN-RECEIPT-TO DISPOSITION-NOTIFICATION-TO X-CONFIRM-READING-TO AUTHENTICATION-RESULTS X-DKIM-AUTHENTICATION-RESULTS LIST-UNSUBSCRIBE)] {488}\r\n
+[00:45:48.333][5b609d5a] INFO[DATA]: $sAtomBuilder=BODY[HEADER.FIELDS (RETURN-PATH RECEIVED MIME-VERSION MESSAGE-ID CONTENT-TYPE FROM TO CC BCC SENDER REPLY-TO DELIVERED-TO IN-REPLY-TO REFERENCES DATE SUBJECT SENSITIVITY X-MSMAIL-PRIORITY IMPORTANCE X-PRIORITY X-DRAFT-INFO RETURN-RECEIPT-TO DISPOSITION-NOTIFICATION-TO X-CONFIRM-READING-TO AUTHENTICATION-RESULTS X-DKIM-AUTHENTICATION-RESULTS LIST-UNSUBSCRIBE)]
+[00:45:48.336][5b609d5a] IMAP[DATA]: < )\r\n
+[00:45:48.339][5b609d5a] IMAP[DATA]: < TAG6 OK Fetch completed (0.001 + 0.000 secs).\r\n
+[00:45:48.473][5b609d5a] AJAX[DATA]: {"Action":"MessageList","Result":{"@Object":"Collection\/MessageCollection","@Count":1,"@Collection":[{"@Object":"Object\/Message","Folder":"INBOX","Uid":"1","Subject":"teste 2","MessageId":"<6013e5004b03229d12f631080735360b@asa.br>","Size":1181,"DateTimeStampInUTC":1676334956,"ReplyTo":null,"From":...
+[00:45:48.477][5b609d5a] IMAP[DATA]: > TAG7 LOGOUT\r\n
+[00:45:48.481][5b609d5a] IMAP[DATA]: < * BYE Logging out\r\n
+[00:45:48.484][5b609d5a] IMAP[DATA]: < TAG7 OK Logout completed (0.001 + 0.000 secs).\r\n
+[00:45:48.488][5b609d5a] IMAP[NOTE]: Disconnected from "tcp://mail.asa.br:143" (success)
+[00:45:48.491][5b609d5a] INFO[MEMORY]: Memory peak usage: 2MB
+[00:45:48.496][5b609d5a] INFO[TIME]: Time delta: 0.36111187934875
+
+[00:45:51.861][a776afaa] INFO[DATA]: [DATE:14.02.23][OFFSET:-00][RL:1.16.0][PHP:7.4.3-4ubuntu2.17][IP:172.20.0.3][PID:178][Apache/2.4.41 (Ubuntu)][apache2handler]
+[00:45:51.865][a776afaa] INFO[DATA]: [APC:off][MB:off][PDO:~][Streams:tcp,udp,unix,udg,ssl,tls,tlsv1.0,tlsv1.1,tlsv1.2,tlsv1.3]
+[00:45:51.869][a776afaa] REQUEST[NOTE]: [GET] https://localhost/rainloop/?/Ajax/&q[]=/_EthrNmy-KiXj63LVMlmRPsm1qoH6KzWV0pCrv2s1dU2AaR5ts8CA73vtfLiLica1MxoJee7BmcPzBAbMkndGEEpfdCCFAZnelQFbk-TAO0BX6LL4gjNK7vD_F2X5N8NfI3o0S8v6amlBk8VTR8YRU-gaP5J5OQlLZNRP-tGUfCT5RjPU0gpCKDduv0UOm1ORNwD5mW8_KLlqVkIcNbNtu2uLH3x5jfwqDqH_CPDXDYM3OJsvQoRrV5P88XfGE8ghtqD5YjQAPw676qkQ884AZuSMbblNLy4rnpX8VgYxgJQIQ70W9s7IU2mGWXbJR2VIXnY_j1R470k/MessageList/&q[]=/U2VudAAwADIwAAA0YmUzYTRkNmU1ZGVhZjVjZWMxZWM4ZmY5OWY2YzAwNAAwM2RhM2YxMjFiMzVjYzFmMmYzNDFiNmM2ODMwMjNmNAAAMAA
+[00:45:51.886][a776afaa] AJAX[NOTE]: Action: DoMessageList
+[00:45:52.041][a776afaa] IMAP[NOTE]: Start connection to "tcp://mail.asa.br:143"
+[00:45:52.052][a776afaa] IMAP[NOTE]: Connected (success)
+[00:45:52.073][a776afaa] IMAP[DATA]: < * OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE LITERAL+ STARTTLS AUTH=PLAIN] Dovecot (Ubuntu) ready.\r\n
+[00:45:52.084][a776afaa] IMAP[DATA]: > TAG1 AUTHENTICATE PLAIN\r\n
+[00:45:52.087][a776afaa] IMAP[DATA]: < + \r\n
+[00:45:52.091][a776afaa] IMAP[SECURE]: > *******\r\n
+[00:45:52.100][a776afaa] IMAP[DATA]: < TAG1 OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE] Logged in\r\n
+[00:45:52.114][a776afaa] IMAP[DATA]: > TAG2 SELECT "Sent"\r\n
+[00:45:52.117][a776afaa] IMAP[DATA]: < * FLAGS (\Answered \Flagged \Deleted \Seen \Draft)\r\n
+[00:45:52.120][a776afaa] IMAP[DATA]: < * OK [PERMANENTFLAGS (\Answered \Flagged \Deleted \Seen \Draft \*)] Flags permitted.\r\n
+[00:45:52.123][a776afaa] IMAP[DATA]: < * 1 EXISTS\r\n
+[00:45:52.126][a776afaa] IMAP[DATA]: < * 1 RECENT\r\n
+[00:45:52.128][a776afaa] IMAP[DATA]: < * OK [UIDVALIDITY 1676334842] UIDs valid\r\n
+[00:45:52.131][a776afaa] IMAP[DATA]: < * OK [UIDNEXT 2] Predicted next UID\r\n
+[00:45:52.134][a776afaa] IMAP[DATA]: < * OK [HIGHESTMODSEQ 2] Highest\r\n
+[00:45:52.137][a776afaa] IMAP[DATA]: < TAG2 OK [READ-WRITE] Select completed (0.002 + 0.000 + 0.001 secs).\r\n
+[00:45:52.152][a776afaa] IMAP[DATA]: > TAG3 CAPABILITY\r\n
+[00:45:52.155][a776afaa] IMAP[DATA]: < * CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE\r\n
+[00:45:52.159][a776afaa] IMAP[DATA]: < TAG3 OK Capability completed (0.001 + 0.000 secs).\r\n
+[00:45:52.168][a776afaa] IMAP[DATA]: > TAG4 STATUS "Sent" (MESSAGES UNSEEN UIDNEXT HIGHESTMODSEQ)\r\n
+[00:45:52.171][a776afaa] IMAP[DATA]: < * OK [HIGHESTMODSEQ 2] Highest\r\n
+[00:45:52.175][a776afaa] IMAP[DATA]: < * STATUS Sent (MESSAGES 1 UIDNEXT 2 UNSEEN 0 HIGHESTMODSEQ 2)\r\n
+[00:45:52.178][a776afaa] IMAP[DATA]: < TAG4 OK [CLIENTBUG] Status on selected mailbox completed (0.001 + 0.000 secs).\r\n
+[00:45:52.185][a776afaa] IMAP[DATA]: > TAG5 UID SORT (REVERSE DATE) US-ASCII UNDELETED\r\n
+[00:45:52.187][a776afaa] IMAP[DATA]: < * SORT 1\r\n
+[00:45:52.191][a776afaa] IMAP[DATA]: < TAG5 OK Sort completed (0.001 + 0.000 secs).\r\n
+[00:45:52.238][a776afaa] INFO[DATA]: Save Serialized UIDS to cache ("Sent" / UNDELETED) [count:1]
+[00:45:52.262][a776afaa] IMAP[DATA]: > TAG6 UID FETCH 1 (UID RFC822.SIZE INTERNALDATE FLAGS BODYSTRUCTURE BODY.PEEK[HEADER.FIELDS (RETURN-PATH RECEIVED MIME-VERSION MESSAGE-ID CONTENT-TYPE FROM TO CC BCC SENDER REPLY-TO DELIVERED-TO IN-REPLY-TO REFERENCES DATE SUBJECT SENSITIVITY X-MSMAIL-PRIORITY IMPORTANCE X-PRIORITY X-DRAFT-INFO RETURN-RECEIPT-TO DISPOSITION-NOTIFICATION-TO X-CONFIRM-READING-TO AUTHENTICATION-RESULTS X-DKIM-AUTHENTICATION-RESULTS LIST-UNSUBSCRIBE)])\r\n
+[00:45:52.265][a776afaa] IMAP[DATA]: < * 1 FETCH (UID 1 RFC822.SIZE 919 INTERNALDATE "14-Feb-2023 00:34:47 +0000" FLAGS (\Seen \Recent) BODYSTRUCTURE (("text" "plain" ("charset" "utf-8") NIL NIL "quoted-printable" 23 1 NIL NIL NIL NIL)("text" "html" ("charset" "utf-8") NIL NIL "quoted-printable" 297 4 NIL NIL NIL NIL) "alternative" ("boundary" "--=_RainLoop_643_255604408.1676334887") NIL NIL NIL) BODY[HEADER.FIELDS (RETURN-PATH RECEIVED MIME-VERSION MESSAGE-ID CONTENT-TYPE FROM TO CC BCC SENDER REPLY-TO DELIVERED-TO IN-REPLY-TO REFERENCES DATE SUBJECT SENSITIVITY X-MSMAIL-PRIORITY IMPORTANCE X-PRIORITY X-DRAFT-INFO RETURN-RECEIPT-TO DISPOSITION-NOTIFICATION-TO X-CONFIRM-READING-TO AUTHENTICATION-RESULTS X-DKIM-AUTHENTICATION-RESULTS LIST-UNSUBSCRIBE)] {262}\r\n
+[00:45:52.268][a776afaa] INFO[DATA]: $sAtomBuilder=BODY[HEADER.FIELDS (RETURN-PATH RECEIVED MIME-VERSION MESSAGE-ID CONTENT-TYPE FROM TO CC BCC SENDER REPLY-TO DELIVERED-TO IN-REPLY-TO REFERENCES DATE SUBJECT SENSITIVITY X-MSMAIL-PRIORITY IMPORTANCE X-PRIORITY X-DRAFT-INFO RETURN-RECEIPT-TO DISPOSITION-NOTIFICATION-TO X-CONFIRM-READING-TO AUTHENTICATION-RESULTS X-DKIM-AUTHENTICATION-RESULTS LIST-UNSUBSCRIBE)]
+[00:45:52.270][a776afaa] IMAP[DATA]: < )\r\n
+[00:45:52.273][a776afaa] IMAP[DATA]: < TAG6 OK Fetch completed (0.001 + 0.000 secs).\r\n
+[00:45:52.386][a776afaa] AJAX[DATA]: {"Action":"MessageList","Result":{"@Object":"Collection\/MessageCollection","@Count":1,"@Collection":[{"@Object":"Object\/Message","Folder":"Sent","Uid":"1","Subject":"Teste 1","MessageId":"<c0abaed66be2b70cfcd6ddcd77654818@asa.br>","Size":919,"DateTimeStampInUTC":1676334887,"ReplyTo":null,"From":[{...
+[00:45:52.408][a776afaa] IMAP[DATA]: > TAG7 LOGOUT\r\n
+[00:45:52.411][a776afaa] IMAP[DATA]: < * BYE Logging out\r\n
+[00:45:52.414][a776afaa] IMAP[DATA]: < TAG7 OK Logout completed (0.001 + 0.000 secs).\r\n
+[00:45:52.417][a776afaa] IMAP[NOTE]: Disconnected from "tcp://mail.asa.br:143" (success)
+[00:45:52.419][a776afaa] INFO[MEMORY]: Memory peak usage: 2MB
+[00:45:52.422][a776afaa] INFO[TIME]: Time delta: 0.75705695152283
+
+[00:45:53.204][24561267] INFO[DATA]: [DATE:14.02.23][OFFSET:-00][RL:1.16.0][PHP:7.4.3-4ubuntu2.17][IP:172.20.0.3][PID:177][Apache/2.4.41 (Ubuntu)][apache2handler]
+[00:45:53.207][24561267] INFO[DATA]: [APC:off][MB:off][PDO:~][Streams:tcp,udp,unix,udg,ssl,tls,tlsv1.0,tlsv1.1,tlsv1.2,tlsv1.3]
+[00:45:53.210][24561267] REQUEST[NOTE]: [POST] https://localhost/rainloop/?/Ajax/&q[]=/_EthrNmy-KiXj63LVMlmRPsm1qoH6KzWV0pCrv2s1dU2AaR5ts8CA73vtfLiLica1MxoJee7BmcPzBAbMkndGEEpfdCCFAZnelQFbk-TAO0BX6LL4gjNK7vD_F2X5N8NfI3o0S8v6amlBk8VTR8YRU-gaP5J5OQlLZNRP-tGUfCT5RjPU0gpCKDduv0UOm1ORNwD5mW8_KLlqVkIcNbNtu2uLH3x5jfwqDqH_CPDXDYM3OJsvQoRrV5P88XfGE8ghtqD5YjQAPw676qkQ884AZuSMbblNLy4rnpX8VgYxgJQIQ70W9s7IU2mGWXbJR2VIXnY_j1R470k/
+[00:45:53.214][24561267] AJAX[NOTE]: Action: DoQuota
+[00:45:53.217][24561267] POST[DATA]: {"Action":"Quota","XToken":"74a9b2544ab7ce8b67e3e9a3eec7b73f"}
+[00:45:53.232][24561267] IMAP[NOTE]: Start connection to "tcp://mail.asa.br:143"
+[00:45:53.235][24561267] IMAP[NOTE]: Connected (success)
+[00:45:53.239][24561267] IMAP[DATA]: < * OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE LITERAL+ STARTTLS AUTH=PLAIN] Dovecot (Ubuntu) ready.\r\n
+[00:45:53.243][24561267] IMAP[DATA]: > TAG1 AUTHENTICATE PLAIN\r\n
+[00:45:53.247][24561267] IMAP[DATA]: < + \r\n
+[00:45:53.251][24561267] IMAP[SECURE]: > *******\r\n
+[00:45:53.260][24561267] IMAP[DATA]: < TAG1 OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE] Logged in\r\n
+[00:45:53.265][24561267] IMAP[DATA]: > TAG2 CAPABILITY\r\n
+[00:45:53.269][24561267] IMAP[DATA]: < * CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE\r\n
+[00:45:53.272][24561267] IMAP[DATA]: < TAG2 OK Capability completed (0.001 + 0.000 secs).\r\n
+[00:45:53.275][24561267] AJAX[DATA]: {"Action":"Quota","Result":false,"Time":138}
+[00:45:53.279][24561267] IMAP[DATA]: > TAG3 LOGOUT\r\n
+[00:45:53.283][24561267] IMAP[DATA]: < * BYE Logging out\r\n
+[00:45:53.286][24561267] IMAP[DATA]: < TAG3 OK Logout completed (0.001 + 0.000 secs).\r\n
+[00:45:53.290][24561267] IMAP[NOTE]: Disconnected from "tcp://mail.asa.br:143" (success)
+[00:45:53.294][24561267] INFO[MEMORY]: Memory peak usage: 2MB
+[00:45:53.298][24561267] INFO[TIME]: Time delta: 0.13337898254395
+
+[00:45:53.373][6695e054] INFO[DATA]: [DATE:14.02.23][OFFSET:-00][RL:1.16.0][PHP:7.4.3-4ubuntu2.17][IP:172.20.0.3][PID:185][Apache/2.4.41 (Ubuntu)][apache2handler]
+[00:45:53.377][6695e054] INFO[DATA]: [APC:off][MB:off][PDO:~][Streams:tcp,udp,unix,udg,ssl,tls,tlsv1.0,tlsv1.1,tlsv1.2,tlsv1.3]
+[00:45:53.381][6695e054] REQUEST[NOTE]: [GET] https://localhost/rainloop/?/Ajax/&q[]=/_EthrNmy-KiXj63LVMlmRPsm1qoH6KzWV0pCrv2s1dU2AaR5ts8CA73vtfLiLica1MxoJee7BmcPzBAbMkndGEEpfdCCFAZnelQFbk-TAO0BX6LL4gjNK7vD_F2X5N8NfI3o0S8v6amlBk8VTR8YRU-gaP5J5OQlLZNRP-tGUfCT5RjPU0gpCKDduv0UOm1ORNwD5mW8_KLlqVkIcNbNtu2uLH3x5jfwqDqH_CPDXDYM3OJsvQoRrV5P88XfGE8ghtqD5YjQAPw676qkQ884AZuSMbblNLy4rnpX8VgYxgJQIQ70W9s7IU2mGWXbJR2VIXnY_j1R470k/Message/&q[]=/U2VudAAxADRiZTNhNGQ2ZTVkZWFmNWNlYzFlYzhmZjk5ZjZjMDA0ADA
+[00:45:53.384][6695e054] AJAX[NOTE]: Action: DoMessage
+[00:45:53.401][6695e054] IMAP[NOTE]: Start connection to "tcp://mail.asa.br:143"
+[00:45:53.404][6695e054] IMAP[NOTE]: Connected (success)
+[00:45:53.408][6695e054] IMAP[DATA]: < * OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE LITERAL+ STARTTLS AUTH=PLAIN] Dovecot (Ubuntu) ready.\r\n
+[00:45:53.412][6695e054] IMAP[DATA]: > TAG1 AUTHENTICATE PLAIN\r\n
+[00:45:53.416][6695e054] IMAP[DATA]: < + \r\n
+[00:45:53.419][6695e054] IMAP[SECURE]: > *******\r\n
+[00:45:53.429][6695e054] IMAP[DATA]: < TAG1 OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE] Logged in\r\n
+[00:45:53.447][6695e054] IMAP[DATA]: > TAG2 SELECT "Sent"\r\n
+[00:45:53.450][6695e054] IMAP[DATA]: < * FLAGS (\Answered \Flagged \Deleted \Seen \Draft)\r\n
+[00:45:53.453][6695e054] IMAP[DATA]: < * OK [PERMANENTFLAGS (\Answered \Flagged \Deleted \Seen \Draft \*)] Flags permitted.\r\n
+[00:45:53.457][6695e054] IMAP[DATA]: < * 1 EXISTS\r\n
+[00:45:53.460][6695e054] IMAP[DATA]: < * 0 RECENT\r\n
+[00:45:53.464][6695e054] IMAP[DATA]: < * OK [UIDVALIDITY 1676334842] UIDs valid\r\n
+[00:45:53.468][6695e054] IMAP[DATA]: < * OK [UIDNEXT 2] Predicted next UID\r\n
+[00:45:53.471][6695e054] IMAP[DATA]: < * OK [HIGHESTMODSEQ 2] Highest\r\n
+[00:45:53.475][6695e054] IMAP[DATA]: < TAG2 OK [READ-WRITE] Select completed (0.001 + 0.000 secs).\r\n
+[00:45:53.479][6695e054] IMAP[DATA]: > TAG3 UID FETCH 1 (UID RFC822.SIZE BODYSTRUCTURE)\r\n
+[00:45:53.482][6695e054] IMAP[DATA]: < * 1 FETCH (UID 1 RFC822.SIZE 919 BODYSTRUCTURE (("text" "plain" ("charset" "utf-8") NIL NIL "quoted-printable" 23 1 NIL NIL NIL NIL)("text" "html" ("charset" "utf-8") NIL NIL "quoted-printable" 297 4 NIL NIL NIL NIL) "alternative" ("boundary" "--=_RainLoop_643_255604408.1676334887") NIL NIL NIL))\r\n
+[00:45:53.486][6695e054] IMAP[DATA]: < TAG3 OK Fetch completed (0.001 + 0.000 secs).\r\n
+[00:45:53.489][6695e054] IMAP[DATA]: > TAG4 UID FETCH 1 (UID RFC822.SIZE INTERNALDATE FLAGS BODY.PEEK[HEADER.FIELDS (RETURN-PATH RECEIVED MIME-VERSION MESSAGE-ID CONTENT-TYPE FROM TO CC BCC SENDER REPLY-TO DELIVERED-TO IN-REPLY-TO REFERENCES DATE SUBJECT SENSITIVITY X-MSMAIL-PRIORITY IMPORTANCE X-PRIORITY X-DRAFT-INFO RETURN-RECEIPT-TO DISPOSITION-NOTIFICATION-TO X-CONFIRM-READING-TO AUTHENTICATION-RESULTS X-DKIM-AUTHENTICATION-RESULTS LIST-UNSUBSCRIBE)] BODY.PEEK[2])\r\n
+[00:45:53.493][6695e054] IMAP[DATA]: < * 1 FETCH (UID 1 RFC822.SIZE 919 INTERNALDATE "14-Feb-2023 00:34:47 +0000" FLAGS (\Seen) BODY[HEADER.FIELDS (RETURN-PATH RECEIVED MIME-VERSION MESSAGE-ID CONTENT-TYPE FROM TO CC BCC SENDER REPLY-TO DELIVERED-TO IN-REPLY-TO REFERENCES DATE SUBJECT SENSITIVITY X-MSMAIL-PRIORITY IMPORTANCE X-PRIORITY X-DRAFT-INFO RETURN-RECEIPT-TO DISPOSITION-NOTIFICATION-TO X-CONFIRM-READING-TO AUTHENTICATION-RESULTS X-DKIM-AUTHENTICATION-RESULTS LIST-UNSUBSCRIBE)] {262}\r\n
+[00:45:53.497][6695e054] INFO[DATA]: $sAtomBuilder=BODY[HEADER.FIELDS (RETURN-PATH RECEIVED MIME-VERSION MESSAGE-ID CONTENT-TYPE FROM TO CC BCC SENDER REPLY-TO DELIVERED-TO IN-REPLY-TO REFERENCES DATE SUBJECT SENSITIVITY X-MSMAIL-PRIORITY IMPORTANCE X-PRIORITY X-DRAFT-INFO RETURN-RECEIPT-TO DISPOSITION-NOTIFICATION-TO X-CONFIRM-READING-TO AUTHENTICATION-RESULTS X-DKIM-AUTHENTICATION-RESULTS LIST-UNSUBSCRIBE)]
+[00:45:53.500][6695e054] IMAP[DATA]: <  BODY[2] {297}\r\n
+[00:45:53.504][6695e054] INFO[DATA]: $sAtomBuilder=BODY[2]
+[00:45:53.508][6695e054] IMAP[DATA]: < )\r\n
+[00:45:53.511][6695e054] IMAP[DATA]: < TAG4 OK Fetch completed (0.001 + 0.000 secs).\r\n
+[00:45:53.537][6695e054] AJAX[DATA]: {"Action":"Message","Result":{"@Object":"Object\/Message","Folder":"Sent","Uid":"1","Subject":"Teste 1","MessageId":"<c0abaed66be2b70cfcd6ddcd77654818@asa.br>","Size":919,"DateTimeStampInUTC":1676334887,"ReplyTo":null,"From":[{"@Object":"Object\/Email","Name":"","Email":"vinicius@asa.br","DkimStatus...
+[00:45:53.541][6695e054] IMAP[DATA]: > TAG5 LOGOUT\r\n
+[00:45:53.545][6695e054] IMAP[DATA]: < * BYE Logging out\r\n
+[00:45:53.549][6695e054] IMAP[DATA]: < TAG5 OK Logout completed (0.001 + 0.000 secs).\r\n
+[00:45:53.553][6695e054] IMAP[NOTE]: Disconnected from "tcp://mail.asa.br:143" (success)
+[00:45:53.556][6695e054] INFO[MEMORY]: Memory peak usage: 2MB
+[00:45:53.559][6695e054] INFO[TIME]: Time delta: 0.22116303443909
+
+[00:45:53.784][5a127026] INFO[DATA]: [DATE:14.02.23][OFFSET:-00][RL:1.16.0][PHP:7.4.3-4ubuntu2.17][IP:172.20.0.3][PID:179][Apache/2.4.41 (Ubuntu)][apache2handler]
+[00:45:53.787][5a127026] INFO[DATA]: [APC:off][MB:off][PDO:~][Streams:tcp,udp,unix,udg,ssl,tls,tlsv1.0,tlsv1.1,tlsv1.2,tlsv1.3]
+[00:45:53.791][5a127026] REQUEST[NOTE]: [GET] https://localhost/rainloop/?/Ajax/&q[]=/_EthrNmy-KiXj63LVMlmRPsm1qoH6KzWV0pCrv2s1dU2AaR5ts8CA73vtfLiLica1MxoJee7BmcPzBAbMkndGEEpfdCCFAZnelQFbk-TAO0BX6LL4gjNK7vD_F2X5N8NfI3o0S8v6amlBk8VTR8YRU-gaP5J5OQlLZNRP-tGUfCT5RjPU0gpCKDduv0UOm1ORNwD5mW8_KLlqVkIcNbNtu2uLH3x5jfwqDqH_CPDXDYM3OJsvQoRrV5P88XfGE8ghtqD5YjQAPw676qkQ884AZuSMbblNLy4rnpX8VgYxgJQIQ70W9s7IU2mGWXbJR2VIXnY_j1R470k/MessageList/&q[]=/RHJhZnRzADAAMjAAADRiZTNhNGQ2ZTVkZWFmNWNlYzFlYzhmZjk5ZjZjMDA0ADFlY2I3OWRhOWNiY2Q4MjQyNWE4ZTI3OWUxZTAzYTU5AAAwAA
+[00:45:53.794][5a127026] AJAX[NOTE]: Action: DoMessageList
+[00:45:53.811][5a127026] IMAP[NOTE]: Start connection to "tcp://mail.asa.br:143"
+[00:45:53.815][5a127026] IMAP[NOTE]: Connected (success)
+[00:45:53.818][5a127026] IMAP[DATA]: < * OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE LITERAL+ STARTTLS AUTH=PLAIN] Dovecot (Ubuntu) ready.\r\n
+[00:45:53.822][5a127026] IMAP[DATA]: > TAG1 AUTHENTICATE PLAIN\r\n
+[00:45:53.827][5a127026] IMAP[DATA]: < + \r\n
+[00:45:53.831][5a127026] IMAP[SECURE]: > *******\r\n
+[00:45:53.840][5a127026] IMAP[DATA]: < TAG1 OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE] Logged in\r\n
+[00:45:53.859][5a127026] IMAP[DATA]: > TAG2 SELECT "Drafts"\r\n
+[00:45:53.863][5a127026] IMAP[DATA]: < * FLAGS (\Answered \Flagged \Deleted \Seen \Draft)\r\n
+[00:45:53.866][5a127026] IMAP[DATA]: < * OK [PERMANENTFLAGS (\Answered \Flagged \Deleted \Seen \Draft \*)] Flags permitted.\r\n
+[00:45:53.869][5a127026] IMAP[DATA]: < * 0 EXISTS\r\n
+[00:45:53.872][5a127026] IMAP[DATA]: < * 0 RECENT\r\n
+[00:45:53.876][5a127026] IMAP[DATA]: < * OK [UIDVALIDITY 1676334843] UIDs valid\r\n
+[00:45:53.880][5a127026] IMAP[DATA]: < * OK [UIDNEXT 1] Predicted next UID\r\n
+[00:45:53.883][5a127026] IMAP[DATA]: < * OK [HIGHESTMODSEQ 1] Highest\r\n
+[00:45:53.887][5a127026] IMAP[DATA]: < TAG2 OK [READ-WRITE] Select completed (0.001 + 0.000 secs).\r\n
+[00:45:53.890][5a127026] IMAP[DATA]: > TAG3 CAPABILITY\r\n
+[00:45:53.894][5a127026] IMAP[DATA]: < * CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE\r\n
+[00:45:53.898][5a127026] IMAP[DATA]: < TAG3 OK Capability completed (0.001 + 0.000 secs).\r\n
+[00:45:53.901][5a127026] IMAP[DATA]: > TAG4 STATUS "Drafts" (MESSAGES UNSEEN UIDNEXT HIGHESTMODSEQ)\r\n
+[00:45:53.904][5a127026] IMAP[DATA]: < * OK [HIGHESTMODSEQ 1] Highest\r\n
+[00:45:53.908][5a127026] IMAP[DATA]: < * STATUS Drafts (MESSAGES 0 UIDNEXT 1 UNSEEN 0 HIGHESTMODSEQ 1)\r\n
+[00:45:53.912][5a127026] IMAP[DATA]: < TAG4 OK [CLIENTBUG] Status on selected mailbox completed (0.001 + 0.000 secs).\r\n
+[00:45:53.916][5a127026] AJAX[DATA]: {"Action":"MessageList","Result":{"@Object":"Collection\/MessageCollection","@Count":0,"@Collection":[],"MessageCount":0,"MessageUnseenCount":0,"MessageResultCount":0,"Folder":"Drafts","FolderHash":"1ecb79da9cbcd82425a8e279e1e03a59","UidNext":"1","ThreadUid":"","NewMessages":[],"Filtered":false,"Off...
+[00:45:53.920][5a127026] IMAP[DATA]: > TAG5 LOGOUT\r\n
+[00:45:53.924][5a127026] IMAP[DATA]: < * BYE Logging out\r\n
+[00:45:53.928][5a127026] IMAP[DATA]: < TAG5 OK Logout completed (0.001 + 0.000 secs).\r\n
+[00:45:53.932][5a127026] IMAP[NOTE]: Disconnected from "tcp://mail.asa.br:143" (success)
+[00:45:53.935][5a127026] INFO[MEMORY]: Memory peak usage: 2MB
+[00:45:53.939][5a127026] INFO[TIME]: Time delta: 0.18929982185364
+
+[00:45:55.049][8ee0ebb6] INFO[DATA]: [DATE:14.02.23][OFFSET:-00][RL:1.16.0][PHP:7.4.3-4ubuntu2.17][IP:172.20.0.3][PID:176][Apache/2.4.41 (Ubuntu)][apache2handler]
+[00:45:55.053][8ee0ebb6] INFO[DATA]: [APC:off][MB:off][PDO:~][Streams:tcp,udp,unix,udg,ssl,tls,tlsv1.0,tlsv1.1,tlsv1.2,tlsv1.3]
+[00:45:55.056][8ee0ebb6] REQUEST[NOTE]: [GET] https://localhost/rainloop/?/Ajax/&q[]=/_EthrNmy-KiXj63LVMlmRPsm1qoH6KzWV0pCrv2s1dU2AaR5ts8CA73vtfLiLica1MxoJee7BmcPzBAbMkndGEEpfdCCFAZnelQFbk-TAO0BX6LL4gjNK7vD_F2X5N8NfI3o0S8v6amlBk8VTR8YRU-gaP5J5OQlLZNRP-tGUfCT5RjPU0gpCKDduv0UOm1ORNwD5mW8_KLlqVkIcNbNtu2uLH3x5jfwqDqH_CPDXDYM3OJsvQoRrV5P88XfGE8ghtqD5YjQAPw676qkQ884AZuSMbblNLy4rnpX8VgYxgJQIQ70W9s7IU2mGWXbJR2VIXnY_j1R470k/MessageList/&q[]=/SnVuayBFLW1haWwAMAAyMAAANGJlM2E0ZDZlNWRlYWY1Y2VjMWVjOGZmOTlmNmMwMDQANmEzMjAxMmU5NjVkNmZhMzZiYzRmZWZjMmI4Y2NjMDcAADAA
+[00:45:55.074][8ee0ebb6] AJAX[NOTE]: Action: DoMessageList
+[00:45:55.266][8ee0ebb6] IMAP[NOTE]: Start connection to "tcp://mail.asa.br:143"
+[00:45:55.277][8ee0ebb6] IMAP[NOTE]: Connected (success)
+[00:45:55.303][8ee0ebb6] IMAP[DATA]: < * OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE LITERAL+ STARTTLS AUTH=PLAIN] Dovecot (Ubuntu) ready.\r\n
+[00:45:55.315][8ee0ebb6] IMAP[DATA]: > TAG1 AUTHENTICATE PLAIN\r\n
+[00:45:55.319][8ee0ebb6] IMAP[DATA]: < + \r\n
+[00:45:55.322][8ee0ebb6] IMAP[SECURE]: > *******\r\n
+[00:45:55.331][8ee0ebb6] IMAP[DATA]: < TAG1 OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE] Logged in\r\n
+[00:45:55.349][8ee0ebb6] IMAP[DATA]: > TAG2 SELECT "Junk E-mail"\r\n
+[00:45:55.353][8ee0ebb6] IMAP[DATA]: < * FLAGS (\Answered \Flagged \Deleted \Seen \Draft)\r\n
+[00:45:55.356][8ee0ebb6] IMAP[DATA]: < * OK [PERMANENTFLAGS (\Answered \Flagged \Deleted \Seen \Draft \*)] Flags permitted.\r\n
+[00:45:55.359][8ee0ebb6] IMAP[DATA]: < * 0 EXISTS\r\n
+[00:45:55.363][8ee0ebb6] IMAP[DATA]: < * 0 RECENT\r\n
+[00:45:55.367][8ee0ebb6] IMAP[DATA]: < * OK [UIDVALIDITY 1676334845] UIDs valid\r\n
+[00:45:55.370][8ee0ebb6] IMAP[DATA]: < * OK [UIDNEXT 1] Predicted next UID\r\n
+[00:45:55.374][8ee0ebb6] IMAP[DATA]: < * OK [HIGHESTMODSEQ 1] Highest\r\n
+[00:45:55.377][8ee0ebb6] IMAP[DATA]: < TAG2 OK [READ-WRITE] Select completed (0.001 + 0.000 secs).\r\n
+[00:45:55.397][8ee0ebb6] IMAP[DATA]: > TAG3 CAPABILITY\r\n
+[00:45:55.400][8ee0ebb6] IMAP[DATA]: < * CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE\r\n
+[00:45:55.404][8ee0ebb6] IMAP[DATA]: < TAG3 OK Capability completed (0.001 + 0.000 secs).\r\n
+[00:45:55.417][8ee0ebb6] IMAP[DATA]: > TAG4 STATUS "Junk E-mail" (MESSAGES UNSEEN UIDNEXT HIGHESTMODSEQ)\r\n
+[00:45:55.421][8ee0ebb6] IMAP[DATA]: < * OK [HIGHESTMODSEQ 1] Highest\r\n
+[00:45:55.425][8ee0ebb6] IMAP[DATA]: < * STATUS "Junk E-mail" (MESSAGES 0 UIDNEXT 1 UNSEEN 0 HIGHESTMODSEQ 1)\r\n
+[00:45:55.428][8ee0ebb6] IMAP[DATA]: < TAG4 OK [CLIENTBUG] Status on selected mailbox completed (0.001 + 0.000 secs).\r\n
+[00:45:55.441][8ee0ebb6] AJAX[DATA]: {"Action":"MessageList","Result":{"@Object":"Collection\/MessageCollection","@Count":0,"@Collection":[],"MessageCount":0,"MessageUnseenCount":0,"MessageResultCount":0,"Folder":"Junk E-mail","FolderHash":"6a32012e965d6fa36bc4fefc2b8ccc07","UidNext":"1","ThreadUid":"","NewMessages":[],"Filtered":false...
+[00:45:55.470][8ee0ebb6] IMAP[DATA]: > TAG5 LOGOUT\r\n
+[00:45:55.473][8ee0ebb6] IMAP[DATA]: < * BYE Logging out\r\n
+[00:45:55.477][8ee0ebb6] IMAP[DATA]: < TAG5 OK Logout completed (0.001 + 0.000 secs).\r\n
+[00:45:55.480][8ee0ebb6] IMAP[NOTE]: Disconnected from "tcp://mail.asa.br:143" (success)
+[00:45:55.483][8ee0ebb6] INFO[MEMORY]: Memory peak usage: 2MB
+[00:45:55.488][8ee0ebb6] INFO[TIME]: Time delta: 0.62690997123718
+
+[00:45:56.242][c88b003a] INFO[DATA]: [DATE:14.02.23][OFFSET:-00][RL:1.16.0][PHP:7.4.3-4ubuntu2.17][IP:172.20.0.3][PID:175][Apache/2.4.41 (Ubuntu)][apache2handler]
+[00:45:56.246][c88b003a] INFO[DATA]: [APC:off][MB:off][PDO:~][Streams:tcp,udp,unix,udg,ssl,tls,tlsv1.0,tlsv1.1,tlsv1.2,tlsv1.3]
+[00:45:56.250][c88b003a] REQUEST[NOTE]: [GET] https://localhost/rainloop/?/Ajax/&q[]=/_EthrNmy-KiXj63LVMlmRPsm1qoH6KzWV0pCrv2s1dU2AaR5ts8CA73vtfLiLica1MxoJee7BmcPzBAbMkndGEEpfdCCFAZnelQFbk-TAO0BX6LL4gjNK7vD_F2X5N8NfI3o0S8v6amlBk8VTR8YRU-gaP5J5OQlLZNRP-tGUfCT5RjPU0gpCKDduv0UOm1ORNwD5mW8_KLlqVkIcNbNtu2uLH3x5jfwqDqH_CPDXDYM3OJsvQoRrV5P88XfGE8ghtqD5YjQAPw676qkQ884AZuSMbblNLy4rnpX8VgYxgJQIQ70W9s7IU2mGWXbJR2VIXnY_j1R470k/MessageList/&q[]=/RGVsZXRlZCBJdGVtcwAwADIwAAA0YmUzYTRkNmU1ZGVhZjVjZWMxZWM4ZmY5OWY2YzAwNABjMTYyMTZiNzUwN2I2M2M5MDUxN2VkZjhjM2QxZGZlNAAAMAA
+[00:45:56.253][c88b003a] AJAX[NOTE]: Action: DoMessageList
+[00:45:56.272][c88b003a] IMAP[NOTE]: Start connection to "tcp://mail.asa.br:143"
+[00:45:56.275][c88b003a] IMAP[NOTE]: Connected (success)
+[00:45:56.279][c88b003a] IMAP[DATA]: < * OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE LITERAL+ STARTTLS AUTH=PLAIN] Dovecot (Ubuntu) ready.\r\n
+[00:45:56.282][c88b003a] IMAP[DATA]: > TAG1 AUTHENTICATE PLAIN\r\n
+[00:45:56.286][c88b003a] IMAP[DATA]: < + \r\n
+[00:45:56.289][c88b003a] IMAP[SECURE]: > *******\r\n
+[00:45:56.298][c88b003a] IMAP[DATA]: < TAG1 OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE] Logged in\r\n
+[00:45:56.319][c88b003a] IMAP[DATA]: > TAG2 SELECT "Deleted Items"\r\n
+[00:45:56.322][c88b003a] IMAP[DATA]: < * FLAGS (\Answered \Flagged \Deleted \Seen \Draft)\r\n
+[00:45:56.325][c88b003a] IMAP[DATA]: < * OK [PERMANENTFLAGS (\Answered \Flagged \Deleted \Seen \Draft \*)] Flags permitted.\r\n
+[00:45:56.329][c88b003a] IMAP[DATA]: < * 0 EXISTS\r\n
+[00:45:56.332][c88b003a] IMAP[DATA]: < * 0 RECENT\r\n
+[00:45:56.335][c88b003a] IMAP[DATA]: < * OK [UIDVALIDITY 1676334846] UIDs valid\r\n
+[00:45:56.338][c88b003a] IMAP[DATA]: < * OK [UIDNEXT 1] Predicted next UID\r\n
+[00:45:56.341][c88b003a] IMAP[DATA]: < * OK [HIGHESTMODSEQ 1] Highest\r\n
+[00:45:56.345][c88b003a] IMAP[DATA]: < TAG2 OK [READ-WRITE] Select completed (0.001 + 0.000 secs).\r\n
+[00:45:56.348][c88b003a] IMAP[DATA]: > TAG3 CAPABILITY\r\n
+[00:45:56.352][c88b003a] IMAP[DATA]: < * CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE\r\n
+[00:45:56.356][c88b003a] IMAP[DATA]: < TAG3 OK Capability completed (0.001 + 0.000 secs).\r\n
+[00:45:56.360][c88b003a] IMAP[DATA]: > TAG4 STATUS "Deleted Items" (MESSAGES UNSEEN UIDNEXT HIGHESTMODSEQ)\r\n
+[00:45:56.363][c88b003a] IMAP[DATA]: < * OK [HIGHESTMODSEQ 1] Highest\r\n
+[00:45:56.366][c88b003a] IMAP[DATA]: < * STATUS "Deleted Items" (MESSAGES 0 UIDNEXT 1 UNSEEN 0 HIGHESTMODSEQ 1)\r\n
+[00:45:56.369][c88b003a] IMAP[DATA]: < TAG4 OK [CLIENTBUG] Status on selected mailbox completed (0.001 + 0.000 secs).\r\n
+[00:45:56.373][c88b003a] AJAX[DATA]: {"Action":"MessageList","Result":{"@Object":"Collection\/MessageCollection","@Count":0,"@Collection":[],"MessageCount":0,"MessageUnseenCount":0,"MessageResultCount":0,"Folder":"Deleted Items","FolderHash":"c16216b7507b63c90517edf8c3d1dfe4","UidNext":"1","ThreadUid":"","NewMessages":[],"Filtered":fal...
+[00:45:56.377][c88b003a] IMAP[DATA]: > TAG5 LOGOUT\r\n
+[00:45:56.381][c88b003a] IMAP[DATA]: < * BYE Logging out\r\n
+[00:45:56.385][c88b003a] IMAP[DATA]: < TAG5 OK Logout completed (0.001 + 0.000 secs).\r\n
+[00:45:56.388][c88b003a] IMAP[NOTE]: Disconnected from "tcp://mail.asa.br:143" (success)
+[00:45:56.391][c88b003a] INFO[MEMORY]: Memory peak usage: 2MB
+[00:45:56.395][c88b003a] INFO[TIME]: Time delta: 0.18724298477173
+
+[00:45:57.335][0fab2866] INFO[DATA]: [DATE:14.02.23][OFFSET:-00][RL:1.16.0][PHP:7.4.3-4ubuntu2.17][IP:172.20.0.3][PID:231][Apache/2.4.41 (Ubuntu)][apache2handler]
+[00:45:57.338][0fab2866] INFO[DATA]: [APC:off][MB:off][PDO:~][Streams:tcp,udp,unix,udg,ssl,tls,tlsv1.0,tlsv1.1,tlsv1.2,tlsv1.3]
+[00:45:57.341][0fab2866] REQUEST[NOTE]: [GET] https://localhost/rainloop/?/Ajax/&q[]=/_EthrNmy-KiXj63LVMlmRPsm1qoH6KzWV0pCrv2s1dU2AaR5ts8CA73vtfLiLica1MxoJee7BmcPzBAbMkndGEEpfdCCFAZnelQFbk-TAO0BX6LL4gjNK7vD_F2X5N8NfI3o0S8v6amlBk8VTR8YRU-gaP5J5OQlLZNRP-tGUfCT5RjPU0gpCKDduv0UOm1ORNwD5mW8_KLlqVkIcNbNtu2uLH3x5jfwqDqH_CPDXDYM3OJsvQoRrV5P88XfGE8ghtqD5YjQAPw676qkQ884AZuSMbblNLy4rnpX8VgYxgJQIQ70W9s7IU2mGWXbJR2VIXnY_j1R470k/MessageList/&q[]=/QXJjaGl2ZQAwADIwAAA0YmUzYTRkNmU1ZGVhZjVjZWMxZWM4ZmY5OWY2YzAwNAA3MGFlM2UwOTlhYjY5NWYzMDk1NzQ5OTE5NGEyNGUzMgAAMAA
+[00:45:57.356][0fab2866] AJAX[NOTE]: Action: DoMessageList
+[00:45:57.500][0fab2866] IMAP[NOTE]: Start connection to "tcp://mail.asa.br:143"
+[00:45:57.509][0fab2866] IMAP[NOTE]: Connected (success)
+[00:45:57.527][0fab2866] IMAP[DATA]: < * OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE LITERAL+ STARTTLS AUTH=PLAIN] Dovecot (Ubuntu) ready.\r\n
+[00:45:57.537][0fab2866] IMAP[DATA]: > TAG1 AUTHENTICATE PLAIN\r\n
+[00:45:57.539][0fab2866] IMAP[DATA]: < + \r\n
+[00:45:57.542][0fab2866] IMAP[SECURE]: > *******\r\n
+[00:45:57.552][0fab2866] IMAP[DATA]: < TAG1 OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE] Logged in\r\n
+[00:45:57.567][0fab2866] IMAP[DATA]: > TAG2 SELECT "Archive"\r\n
+[00:45:57.570][0fab2866] IMAP[DATA]: < * FLAGS (\Answered \Flagged \Deleted \Seen \Draft)\r\n
+[00:45:57.572][0fab2866] IMAP[DATA]: < * OK [PERMANENTFLAGS (\Answered \Flagged \Deleted \Seen \Draft \*)] Flags permitted.\r\n
+[00:45:57.576][0fab2866] IMAP[DATA]: < * 0 EXISTS\r\n
+[00:45:57.579][0fab2866] IMAP[DATA]: < * 0 RECENT\r\n
+[00:45:57.582][0fab2866] IMAP[DATA]: < * OK [UIDVALIDITY 1676334847] UIDs valid\r\n
+[00:45:57.584][0fab2866] IMAP[DATA]: < * OK [UIDNEXT 1] Predicted next UID\r\n
+[00:45:57.587][0fab2866] IMAP[DATA]: < TAG2 OK [READ-WRITE] Select completed (0.001 + 0.000 secs).\r\n
+[00:45:57.604][0fab2866] IMAP[DATA]: > TAG3 CAPABILITY\r\n
+[00:45:57.607][0fab2866] IMAP[DATA]: < * CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE\r\n
+[00:45:57.611][0fab2866] IMAP[DATA]: < TAG3 OK Capability completed (0.001 + 0.000 secs).\r\n
+[00:45:57.622][0fab2866] IMAP[DATA]: > TAG4 STATUS "Archive" (MESSAGES UNSEEN UIDNEXT HIGHESTMODSEQ)\r\n
+[00:45:57.625][0fab2866] IMAP[DATA]: < * OK [HIGHESTMODSEQ 1] Highest\r\n
+[00:45:57.629][0fab2866] IMAP[DATA]: < * STATUS Archive (MESSAGES 0 UIDNEXT 1 UNSEEN 0 HIGHESTMODSEQ 1)\r\n
+[00:45:57.632][0fab2866] IMAP[DATA]: < TAG4 OK [CLIENTBUG] Status on selected mailbox completed (0.001 + 0.000 secs).\r\n
+[00:45:57.638][0fab2866] AJAX[DATA]: {"Action":"MessageList","Result":{"@Object":"Collection\/MessageCollection","@Count":0,"@Collection":[],"MessageCount":0,"MessageUnseenCount":0,"MessageResultCount":0,"Folder":"Archive","FolderHash":"70ae3e099ab695f30957499194a24e32","UidNext":"1","ThreadUid":"","NewMessages":[],"Filtered":false,"Of...
+[00:45:57.661][0fab2866] IMAP[DATA]: > TAG5 LOGOUT\r\n
+[00:45:57.664][0fab2866] IMAP[DATA]: < * BYE Logging out\r\n
+[00:45:57.667][0fab2866] IMAP[DATA]: < TAG5 OK Logout completed (0.001 + 0.000 secs).\r\n
+[00:45:57.670][0fab2866] IMAP[NOTE]: Disconnected from "tcp://mail.asa.br:143" (success)
+[00:45:57.673][0fab2866] INFO[MEMORY]: Memory peak usage: 2MB
+[00:45:57.675][0fab2866] INFO[TIME]: Time delta: 0.49115300178528
+
+[00:46:23.504][71a1c44e] INFO[DATA]: [DATE:14.02.23][OFFSET:-00][RL:1.16.0][PHP:7.4.3-4ubuntu2.17][IP:172.20.0.3][PID:178][Apache/2.4.41 (Ubuntu)][apache2handler]
+[00:46:23.508][71a1c44e] INFO[DATA]: [APC:off][MB:off][PDO:~][Streams:tcp,udp,unix,udg,ssl,tls,tlsv1.0,tlsv1.1,tlsv1.2,tlsv1.3]
+[00:46:23.511][71a1c44e] REQUEST[NOTE]: [POST] https://localhost/rainloop/?/Ajax/&q[]=/_EthrNmy-KiXj63LVMlmRPsm1qoH6KzWV0pCrv2s1dU2AaR5ts8CA73vtfLiLica1MxoJee7BmcPzBAbMkndGEEpfdCCFAZnelQFbk-TAO0BX6LL4gjNK7vD_F2X5N8NfI3o0S8v6amlBk8VTR8YRU-gaP5J5OQlLZNRP-tGUfCT5RjPU0gpCKDduv0UOm1ORNwD5mW8_KLlqVkIcNbNtu2uLH3x5jfwqDqH_CPDXDYM3OJsvQoRrV5P88XfGE8ghtqD5YjQAPw676qkQ884AZuSMbblNLy4rnpX8VgYxgJQIQ70W9s7IU2mGWXbJR2VIXnY_j1R470k/
+[00:46:23.523][71a1c44e] AJAX[NOTE]: Action: DoAppDelayStart
+[00:46:23.526][71a1c44e] POST[DATA]: {"Action":"AppDelayStart","XToken":"74a9b2544ab7ce8b67e3e9a3eec7b73f"}
+[00:46:23.607][71a1c44e] AJAX[DATA]: {"Action":"AppDelayStart","Result":true,"Time":235}
+[00:46:23.635][71a1c44e] INFO[MEMORY]: Memory peak usage: 2MB
+[00:46:23.639][71a1c44e] INFO[TIME]: Time delta: 0.24050521850586
+
+[00:47:48.660][c6285ab2] INFO[DATA]: [DATE:14.02.23][OFFSET:-00][RL:1.16.0][PHP:7.4.3-4ubuntu2.17][IP:172.20.0.3][PID:177][Apache/2.4.41 (Ubuntu)][apache2handler]
+[00:47:48.663][c6285ab2] INFO[DATA]: [APC:off][MB:off][PDO:~][Streams:tcp,udp,unix,udg,ssl,tls,tlsv1.0,tlsv1.1,tlsv1.2,tlsv1.3]
+[00:47:48.667][c6285ab2] REQUEST[NOTE]: [POST] https://localhost/rainloop/?/Ajax/&q[]=/_EthrNmy-KiXj63LVMlmRPsm1qoH6KzWV0pCrv2s1dU2AaR5ts8CA73vtfLiLica1MxoJee7BmcPzBAbMkndGEEpfdCCFAZnelQFbk-TAO0BX6LL4gjNK7vD_F2X5N8NfI3o0S8v6amlBk8VTR8YRU-gaP5J5OQlLZNRP-tGUfCT5RjPU0gpCKDduv0UOm1ORNwD5mW8_KLlqVkIcNbNtu2uLH3x5jfwqDqH_CPDXDYM3OJsvQoRrV5P88XfGE8ghtqD5YjQAPw676qkQ884AZuSMbblNLy4rnpX8VgYxgJQIQ70W9s7IU2mGWXbJR2VIXnY_j1R470k/
+[00:47:48.684][c6285ab2] AJAX[NOTE]: Action: DoFolderInformation
+[00:47:48.687][c6285ab2] POST[DATA]: {"Folder":"INBOX","FlagsUids":"","UidNext":"2","Action":"FolderInformation","XToken":"74a9b2544ab7ce8b67e3e9a3eec7b73f"}
+[00:47:48.868][c6285ab2] IMAP[NOTE]: Start connection to "tcp://mail.asa.br:143"
+[00:47:48.880][c6285ab2] IMAP[NOTE]: Connected (success)
+[00:47:48.901][c6285ab2] IMAP[DATA]: < * OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE LITERAL+ STARTTLS AUTH=PLAIN] Dovecot (Ubuntu) ready.\r\n
+[00:47:48.915][c6285ab2] IMAP[DATA]: > TAG1 AUTHENTICATE PLAIN\r\n
+[00:47:48.919][c6285ab2] IMAP[DATA]: < + \r\n
+[00:47:48.922][c6285ab2] IMAP[SECURE]: > *******\r\n
+[00:47:48.936][c6285ab2] IMAP[DATA]: < TAG1 OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE] Logged in\r\n
+[00:47:48.945][c6285ab2] IMAP[DATA]: > TAG2 CAPABILITY\r\n
+[00:47:48.948][c6285ab2] IMAP[DATA]: < * CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE\r\n
+[00:47:48.952][c6285ab2] IMAP[DATA]: < TAG2 OK Capability completed (0.001 + 0.000 secs).\r\n
+[00:47:48.955][c6285ab2] IMAP[DATA]: > TAG3 STATUS "INBOX" (MESSAGES UNSEEN UIDNEXT HIGHESTMODSEQ)\r\n
+[00:47:48.958][c6285ab2] IMAP[DATA]: < * STATUS INBOX (MESSAGES 1 UIDNEXT 2 UNSEEN 0 HIGHESTMODSEQ 3)\r\n
+[00:47:48.961][c6285ab2] IMAP[DATA]: < TAG3 OK Status completed (0.001 + 0.000 secs).\r\n
+[00:47:48.965][c6285ab2] AJAX[DATA]: {"Action":"FolderInformation","Result":{"Folder":"INBOX","Hash":"a28397e4ebbc603e916a9f0b2b9d6234","MessageCount":1,"MessageUnseenCount":0,"UidNext":"2","Flags":[],"HighestModSeq":"3","NewMessages":[],"Version":"1.16.0"},"Time":574}
+[00:47:48.991][c6285ab2] IMAP[DATA]: > TAG4 LOGOUT\r\n
+[00:47:48.994][c6285ab2] IMAP[DATA]: < * BYE Logging out\r\n
+[00:47:48.998][c6285ab2] IMAP[DATA]: < TAG4 OK Logout completed (0.001 + 0.000 secs).\r\n
+[00:47:49.003][c6285ab2] IMAP[NOTE]: Disconnected from "tcp://mail.asa.br:143" (success)
+[00:47:49.007][c6285ab2] INFO[MEMORY]: Memory peak usage: 2MB
+[00:47:49.011][c6285ab2] INFO[TIME]: Time delta: 0.56448006629944
+
+[00:48:48.631][cc7e813e] INFO[DATA]: [DATE:14.02.23][OFFSET:-00][RL:1.16.0][PHP:7.4.3-4ubuntu2.17][IP:172.20.0.3][PID:185][Apache/2.4.41 (Ubuntu)][apache2handler]
+[00:48:48.634][cc7e813e] INFO[DATA]: [APC:off][MB:off][PDO:~][Streams:tcp,udp,unix,udg,ssl,tls,tlsv1.0,tlsv1.1,tlsv1.2,tlsv1.3]
+[00:48:48.638][cc7e813e] REQUEST[NOTE]: [POST] https://localhost/rainloop/?/Ajax/&q[]=/_EthrNmy-KiXj63LVMlmRPsm1qoH6KzWV0pCrv2s1dU2AaR5ts8CA73vtfLiLica1MxoJee7BmcPzBAbMkndGEEpfdCCFAZnelQFbk-TAO0BX6LL4gjNK7vD_F2X5N8NfI3o0S8v6amlBk8VTR8YRU-gaP5J5OQlLZNRP-tGUfCT5RjPU0gpCKDduv0UOm1ORNwD5mW8_KLlqVkIcNbNtu2uLH3x5jfwqDqH_CPDXDYM3OJsvQoRrV5P88XfGE8ghtqD5YjQAPw676qkQ884AZuSMbblNLy4rnpX8VgYxgJQIQ70W9s7IU2mGWXbJR2VIXnY_j1R470k/
+[00:48:48.655][cc7e813e] AJAX[NOTE]: Action: DoFolderInformation
+[00:48:48.658][cc7e813e] POST[DATA]: {"Folder":"Sent","FlagsUids":"","UidNext":"","Action":"FolderInformation","XToken":"74a9b2544ab7ce8b67e3e9a3eec7b73f"}
+[00:48:48.843][cc7e813e] IMAP[NOTE]: Start connection to "tcp://mail.asa.br:143"
+[00:48:48.854][cc7e813e] IMAP[NOTE]: Connected (success)
+[00:48:48.879][cc7e813e] IMAP[DATA]: < * OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE LITERAL+ STARTTLS AUTH=PLAIN] Dovecot (Ubuntu) ready.\r\n
+[00:48:48.891][cc7e813e] IMAP[DATA]: > TAG1 AUTHENTICATE PLAIN\r\n
+[00:48:48.895][cc7e813e] IMAP[DATA]: < + \r\n
+[00:48:48.898][cc7e813e] IMAP[SECURE]: > *******\r\n
+[00:48:48.908][cc7e813e] IMAP[DATA]: < TAG1 OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE] Logged in\r\n
+[00:48:48.921][cc7e813e] IMAP[DATA]: > TAG2 CAPABILITY\r\n
+[00:48:48.923][cc7e813e] IMAP[DATA]: < * CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE\r\n
+[00:48:48.926][cc7e813e] IMAP[DATA]: < TAG2 OK Capability completed (0.001 + 0.000 secs).\r\n
+[00:48:48.929][cc7e813e] IMAP[DATA]: > TAG3 STATUS "Sent" (MESSAGES UNSEEN UIDNEXT HIGHESTMODSEQ)\r\n
+[00:48:48.933][cc7e813e] IMAP[DATA]: < * STATUS Sent (MESSAGES 1 UIDNEXT 2 UNSEEN 0 HIGHESTMODSEQ 2)\r\n
+[00:48:48.936][cc7e813e] IMAP[DATA]: < TAG3 OK Status completed (0.001 + 0.000 secs).\r\n
+[00:48:48.938][cc7e813e] AJAX[DATA]: {"Action":"FolderInformation","Result":{"Folder":"Sent","Hash":"03da3f121b35cc1f2f341b6c683023f4","MessageCount":1,"MessageUnseenCount":0,"UidNext":"2","Flags":[],"HighestModSeq":"2","NewMessages":[],"Version":"1.16.0"},"Time":561}
+[00:48:48.962][cc7e813e] IMAP[DATA]: > TAG4 LOGOUT\r\n
+[00:48:48.965][cc7e813e] IMAP[DATA]: < * BYE Logging out\r\n
+[00:48:48.968][cc7e813e] IMAP[DATA]: < TAG4 OK Logout completed (0.001 + 0.000 secs).\r\n
+[00:48:48.971][cc7e813e] IMAP[NOTE]: Disconnected from "tcp://mail.asa.br:143" (success)
+[00:48:48.974][cc7e813e] INFO[MEMORY]: Memory peak usage: 2MB
+[00:48:48.977][cc7e813e] INFO[TIME]: Time delta: 0.54442381858826
+
+[00:49:48.626][29d9fb8f] INFO[DATA]: [DATE:14.02.23][OFFSET:-00][RL:1.16.0][PHP:7.4.3-4ubuntu2.17][IP:172.20.0.3][PID:179][Apache/2.4.41 (Ubuntu)][apache2handler]
+[00:49:48.630][29d9fb8f] INFO[DATA]: [APC:off][MB:off][PDO:~][Streams:tcp,udp,unix,udg,ssl,tls,tlsv1.0,tlsv1.1,tlsv1.2,tlsv1.3]
+[00:49:48.633][29d9fb8f] REQUEST[NOTE]: [POST] https://localhost/rainloop/?/Ajax/&q[]=/_EthrNmy-KiXj63LVMlmRPsm1qoH6KzWV0pCrv2s1dU2AaR5ts8CA73vtfLiLica1MxoJee7BmcPzBAbMkndGEEpfdCCFAZnelQFbk-TAO0BX6LL4gjNK7vD_F2X5N8NfI3o0S8v6amlBk8VTR8YRU-gaP5J5OQlLZNRP-tGUfCT5RjPU0gpCKDduv0UOm1ORNwD5mW8_KLlqVkIcNbNtu2uLH3x5jfwqDqH_CPDXDYM3OJsvQoRrV5P88XfGE8ghtqD5YjQAPw676qkQ884AZuSMbblNLy4rnpX8VgYxgJQIQ70W9s7IU2mGWXbJR2VIXnY_j1R470k/
+[00:49:48.650][29d9fb8f] AJAX[NOTE]: Action: DoFolderInformation
+[00:49:48.653][29d9fb8f] POST[DATA]: {"Folder":"INBOX","FlagsUids":"","UidNext":"2","Action":"FolderInformation","XToken":"74a9b2544ab7ce8b67e3e9a3eec7b73f"}
+[00:49:48.841][29d9fb8f] IMAP[NOTE]: Start connection to "tcp://mail.asa.br:143"
+[00:49:48.852][29d9fb8f] IMAP[NOTE]: Connected (success)
+[00:49:48.878][29d9fb8f] IMAP[DATA]: < * OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE LITERAL+ STARTTLS AUTH=PLAIN] Dovecot (Ubuntu) ready.\r\n
+[00:49:48.892][29d9fb8f] IMAP[DATA]: > TAG1 AUTHENTICATE PLAIN\r\n
+[00:49:48.896][29d9fb8f] IMAP[DATA]: < + \r\n
+[00:49:48.900][29d9fb8f] IMAP[SECURE]: > *******\r\n
+[00:49:48.910][29d9fb8f] IMAP[DATA]: < TAG1 OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE] Logged in\r\n
+[00:49:48.925][29d9fb8f] IMAP[DATA]: > TAG2 CAPABILITY\r\n
+[00:49:48.928][29d9fb8f] IMAP[DATA]: < * CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE\r\n
+[00:49:48.932][29d9fb8f] IMAP[DATA]: < TAG2 OK Capability completed (0.001 + 0.000 secs).\r\n
+[00:49:48.936][29d9fb8f] IMAP[DATA]: > TAG3 STATUS "INBOX" (MESSAGES UNSEEN UIDNEXT HIGHESTMODSEQ)\r\n
+[00:49:48.940][29d9fb8f] IMAP[DATA]: < * STATUS INBOX (MESSAGES 1 UIDNEXT 2 UNSEEN 0 HIGHESTMODSEQ 3)\r\n
+[00:49:48.943][29d9fb8f] IMAP[DATA]: < TAG3 OK Status completed (0.001 + 0.000 secs).\r\n
+[00:49:48.947][29d9fb8f] AJAX[DATA]: {"Action":"FolderInformation","Result":{"Folder":"INBOX","Hash":"a28397e4ebbc603e916a9f0b2b9d6234","MessageCount":1,"MessageUnseenCount":0,"UidNext":"2","Flags":[],"HighestModSeq":"3","NewMessages":[],"Version":"1.16.0"},"Time":570}
+[00:49:48.976][29d9fb8f] IMAP[DATA]: > TAG4 LOGOUT\r\n
+[00:49:48.980][29d9fb8f] IMAP[DATA]: < * BYE Logging out\r\n
+[00:49:48.983][29d9fb8f] IMAP[DATA]: < TAG4 OK Logout completed (0.001 + 0.000 secs).\r\n
+[00:49:48.987][29d9fb8f] IMAP[NOTE]: Disconnected from "tcp://mail.asa.br:143" (success)
+[00:49:48.991][29d9fb8f] INFO[MEMORY]: Memory peak usage: 2MB
+[00:49:48.995][29d9fb8f] INFO[TIME]: Time delta: 0.56257796287537
+
+
+[00:51:48.458][e1c8973e] INFO[DATA]: [DATE:14.02.23][OFFSET:-00][RL:1.16.0][PHP:7.4.3-4ubuntu2.17][IP:172.20.0.3][PID:176][Apache/2.4.41 (Ubuntu)][apache2handler]
+[00:51:48.459][870de2c9] INFO[DATA]: [DATE:14.02.23][OFFSET:-00][RL:1.16.0][PHP:7.4.3-4ubuntu2.17][IP:172.20.0.3][PID:175][Apache/2.4.41 (Ubuntu)][apache2handler]
+[00:51:48.461][e1c8973e] INFO[DATA]: [APC:off][MB:off][PDO:~][Streams:tcp,udp,unix,udg,ssl,tls,tlsv1.0,tlsv1.1,tlsv1.2,tlsv1.3]
+[00:51:48.461][870de2c9] INFO[DATA]: [APC:off][MB:off][PDO:~][Streams:tcp,udp,unix,udg,ssl,tls,tlsv1.0,tlsv1.1,tlsv1.2,tlsv1.3]
+[00:51:48.462][e1c8973e] REQUEST[NOTE]: [POST] https://localhost/rainloop/?/Ajax/&q[]=/_EthrNmy-KiXj63LVMlmRPsm1qoH6KzWV0pCrv2s1dU2AaR5ts8CA73vtfLiLica1MxoJee7BmcPzBAbMkndGEEpfdCCFAZnelQFbk-TAO0BX6LL4gjNK7vD_F2X5N8NfI3o0S8v6amlBk8VTR8YRU-gaP5J5OQlLZNRP-tGUfCT5RjPU0gpCKDduv0UOm1ORNwD5mW8_KLlqVkIcNbNtu2uLH3x5jfwqDqH_CPDXDYM3OJsvQoRrV5P88XfGE8ghtqD5YjQAPw676qkQ884AZuSMbblNLy4rnpX8VgYxgJQIQ70W9s7IU2mGWXbJR2VIXnY_j1R470k/
+[00:51:48.463][870de2c9] REQUEST[NOTE]: [POST] https://localhost/rainloop/?/Ajax/&q[]=/_EthrNmy-KiXj63LVMlmRPsm1qoH6KzWV0pCrv2s1dU2AaR5ts8CA73vtfLiLica1MxoJee7BmcPzBAbMkndGEEpfdCCFAZnelQFbk-TAO0BX6LL4gjNK7vD_F2X5N8NfI3o0S8v6amlBk8VTR8YRU-gaP5J5OQlLZNRP-tGUfCT5RjPU0gpCKDduv0UOm1ORNwD5mW8_KLlqVkIcNbNtu2uLH3x5jfwqDqH_CPDXDYM3OJsvQoRrV5P88XfGE8ghtqD5YjQAPw676qkQ884AZuSMbblNLy4rnpX8VgYxgJQIQ70W9s7IU2mGWXbJR2VIXnY_j1R470k/
+[00:51:48.467][e1c8973e] AJAX[NOTE]: Action: DoFolderInformation
+[00:51:48.468][870de2c9] AJAX[NOTE]: Action: DoFolderInformation
+[00:51:48.470][870de2c9] POST[DATA]: {"Folder":"Sent","FlagsUids":"","UidNext":"","Action":"FolderInformation","XToken":"74a9b2544ab7ce8b67e3e9a3eec7b73f"}
+[00:51:48.470][e1c8973e] POST[DATA]: {"Folder":"INBOX","FlagsUids":"","UidNext":"2","Action":"FolderInformation","XToken":"74a9b2544ab7ce8b67e3e9a3eec7b73f"}
+[00:51:48.504][e1c8973e] IMAP[NOTE]: Start connection to "tcp://mail.asa.br:143"
+[00:51:48.503][870de2c9] IMAP[NOTE]: Start connection to "tcp://mail.asa.br:143"
+[00:51:48.509][e1c8973e] IMAP[NOTE]: Connected (success)
+[00:51:48.510][870de2c9] IMAP[NOTE]: Connected (success)
+[00:51:48.518][870de2c9] IMAP[DATA]: < * OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE LITERAL+ STARTTLS AUTH=PLAIN] Dovecot (Ubuntu) ready.\r\n
+[00:51:48.520][e1c8973e] IMAP[DATA]: < * OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE LITERAL+ STARTTLS AUTH=PLAIN] Dovecot (Ubuntu) ready.\r\n
+[00:51:48.525][870de2c9] IMAP[DATA]: > TAG1 AUTHENTICATE PLAIN\r\n
+[00:51:48.526][e1c8973e] IMAP[DATA]: > TAG1 AUTHENTICATE PLAIN\r\n
+[00:51:48.527][870de2c9] IMAP[DATA]: < + \r\n
+[00:51:48.527][e1c8973e] IMAP[DATA]: < + \r\n
+[00:51:48.528][870de2c9] IMAP[SECURE]: > *******\r\n
+[00:51:48.528][e1c8973e] IMAP[SECURE]: > *******\r\n
+[00:51:48.541][870de2c9] IMAP[DATA]: < TAG1 OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE] Logged in\r\n
+[00:51:48.545][e1c8973e] IMAP[DATA]: < TAG1 OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE] Logged in\r\n
+[00:51:48.551][870de2c9] IMAP[DATA]: > TAG2 CAPABILITY\r\n
+[00:51:48.552][e1c8973e] IMAP[DATA]: > TAG2 CAPABILITY\r\n
+[00:51:48.554][e1c8973e] IMAP[DATA]: < * CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE\r\n
+[00:51:48.554][870de2c9] IMAP[DATA]: < * CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE\r\n
+[00:51:48.555][e1c8973e] IMAP[DATA]: < TAG2 OK Capability completed (0.001 + 0.000 secs).\r\n
+[00:51:48.555][870de2c9] IMAP[DATA]: < TAG2 OK Capability completed (0.001 + 0.000 secs).\r\n
+[00:51:48.557][870de2c9] IMAP[DATA]: > TAG3 STATUS "Sent" (MESSAGES UNSEEN UIDNEXT HIGHESTMODSEQ)\r\n
+[00:51:48.557][e1c8973e] IMAP[DATA]: > TAG3 STATUS "INBOX" (MESSAGES UNSEEN UIDNEXT HIGHESTMODSEQ)\r\n
+[00:51:48.558][870de2c9] IMAP[DATA]: < * STATUS Sent (MESSAGES 1 UIDNEXT 2 UNSEEN 0 HIGHESTMODSEQ 2)\r\n
+[00:51:48.559][e1c8973e] IMAP[DATA]: < * STATUS INBOX (MESSAGES 1 UIDNEXT 2 UNSEEN 0 HIGHESTMODSEQ 3)\r\n
+[00:51:48.560][870de2c9] IMAP[DATA]: < TAG3 OK Status completed (0.001 + 0.000 secs).\r\n
+[00:51:48.560][e1c8973e] IMAP[DATA]: < TAG3 OK Status completed (0.001 + 0.000 secs).\r\n
+[00:51:48.561][870de2c9] AJAX[DATA]: {"Action":"FolderInformation","Result":{"Folder":"Sent","Hash":"03da3f121b35cc1f2f341b6c683023f4","MessageCount":1,"MessageUnseenCount":0,"UidNext":"2","Flags":[],"HighestModSeq":"2","NewMessages":[],"Version":"1.16.0"},"Time":178}
+[00:51:48.561][e1c8973e] AJAX[DATA]: {"Action":"FolderInformation","Result":{"Folder":"INBOX","Hash":"a28397e4ebbc603e916a9f0b2b9d6234","MessageCount":1,"MessageUnseenCount":0,"UidNext":"2","Flags":[],"HighestModSeq":"3","NewMessages":[],"Version":"1.16.0"},"Time":177}
+[00:51:48.569][e1c8973e] IMAP[DATA]: > TAG4 LOGOUT\r\n
+[00:51:48.570][870de2c9] IMAP[DATA]: > TAG4 LOGOUT\r\n
+[00:51:48.572][e1c8973e] IMAP[DATA]: < * BYE Logging out\r\n
+[00:51:48.572][870de2c9] IMAP[DATA]: < * BYE Logging out\r\n
+[00:51:48.573][870de2c9] IMAP[DATA]: < TAG4 OK Logout completed (0.001 + 0.000 secs).\r\n
+[00:51:48.573][e1c8973e] IMAP[DATA]: < TAG4 OK Logout completed (0.001 + 0.000 secs).\r\n
+[00:51:48.574][e1c8973e] IMAP[NOTE]: Disconnected from "tcp://mail.asa.br:143" (success)
+[00:51:48.574][870de2c9] IMAP[NOTE]: Disconnected from "tcp://mail.asa.br:143" (success)
+[00:51:48.576][870de2c9] INFO[MEMORY]: Memory peak usage: 2MB
+[00:51:48.576][e1c8973e] INFO[MEMORY]: Memory peak usage: 2MB
+[00:51:48.577][870de2c9] INFO[TIME]: Time delta: 0.17766809463501
+[00:51:48.577][e1c8973e] INFO[TIME]: Time delta: 0.17778587341309
+
+[00:52:49.638][9f5d2482] INFO[DATA]: [DATE:14.02.23][OFFSET:-00][RL:1.16.0][PHP:7.4.3-4ubuntu2.17][IP:172.20.0.3][PID:231][Apache/2.4.41 (Ubuntu)][apache2handler]
+[00:52:49.642][9f5d2482] INFO[DATA]: [APC:off][MB:off][PDO:~][Streams:tcp,udp,unix,udg,ssl,tls,tlsv1.0,tlsv1.1,tlsv1.2,tlsv1.3]
+[00:52:49.645][9f5d2482] REQUEST[NOTE]: [POST] https://localhost/rainloop/?/Ajax/&q[]=/_EthrNmy-KiXj63LVMlmRPsm1qoH6KzWV0pCrv2s1dU2AaR5ts8CA73vtfLiLica1MxoJee7BmcPzBAbMkndGEEpfdCCFAZnelQFbk-TAO0BX6LL4gjNK7vD_F2X5N8NfI3o0S8v6amlBk8VTR8YRU-gaP5J5OQlLZNRP-tGUfCT5RjPU0gpCKDduv0UOm1ORNwD5mW8_KLlqVkIcNbNtu2uLH3x5jfwqDqH_CPDXDYM3OJsvQoRrV5P88XfGE8ghtqD5YjQAPw676qkQ884AZuSMbblNLy4rnpX8VgYxgJQIQ70W9s7IU2mGWXbJR2VIXnY_j1R470k/
+[00:52:49.664][9f5d2482] AJAX[NOTE]: Action: DoFolderInformationMultiply
+[00:52:49.667][9f5d2482] POST[DATA]: {"Folders":["Drafts","Junk E-mail","Deleted Items","Archive"],"Action":"FolderInformationMultiply","XToken":"74a9b2544ab7ce8b67e3e9a3eec7b73f"}
+[00:52:49.845][9f5d2482] IMAP[NOTE]: Start connection to "tcp://mail.asa.br:143"
+[00:52:49.856][9f5d2482] IMAP[NOTE]: Connected (success)
+[00:52:49.881][9f5d2482] IMAP[DATA]: < * OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE LITERAL+ STARTTLS AUTH=PLAIN] Dovecot (Ubuntu) ready.\r\n
+[00:52:49.895][9f5d2482] IMAP[DATA]: > TAG1 AUTHENTICATE PLAIN\r\n
+[00:52:49.899][9f5d2482] IMAP[DATA]: < + \r\n
+[00:52:49.902][9f5d2482] IMAP[SECURE]: > *******\r\n
+[00:52:49.916][9f5d2482] IMAP[DATA]: < TAG1 OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE] Logged in\r\n
+[00:52:49.931][9f5d2482] IMAP[DATA]: > TAG2 CAPABILITY\r\n
+[00:52:49.935][9f5d2482] IMAP[DATA]: < * CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY LITERAL+ NOTIFY SPECIAL-USE\r\n
+[00:52:49.939][9f5d2482] IMAP[DATA]: < TAG2 OK Capability completed (0.001 + 0.000 secs).\r\n
+[00:52:49.942][9f5d2482] IMAP[DATA]: > TAG3 STATUS "Drafts" (MESSAGES UNSEEN UIDNEXT HIGHESTMODSEQ)\r\n
+[00:52:49.946][9f5d2482] IMAP[DATA]: < * STATUS Drafts (MESSAGES 0 UIDNEXT 1 UNSEEN 0 HIGHESTMODSEQ 1)\r\n
+[00:52:49.949][9f5d2482] IMAP[DATA]: < TAG3 OK Status completed (0.001 + 0.000 secs).\r\n
+[00:52:49.952][9f5d2482] IMAP[DATA]: > TAG4 STATUS "Junk E-mail" (MESSAGES UNSEEN UIDNEXT HIGHESTMODSEQ)\r\n
+[00:52:49.956][9f5d2482] IMAP[DATA]: < * STATUS "Junk E-mail" (MESSAGES 0 UIDNEXT 1 UNSEEN 0 HIGHESTMODSEQ 1)\r\n
+[00:52:49.960][9f5d2482] IMAP[DATA]: < TAG4 OK Status completed (0.001 + 0.000 secs).\r\n
+[00:52:49.964][9f5d2482] IMAP[DATA]: > TAG5 STATUS "Deleted Items" (MESSAGES UNSEEN UIDNEXT HIGHESTMODSEQ)\r\n
+[00:52:49.967][9f5d2482] IMAP[DATA]: < * STATUS "Deleted Items" (MESSAGES 0 UIDNEXT 1 UNSEEN 0 HIGHESTMODSEQ 1)\r\n
+[00:52:49.971][9f5d2482] IMAP[DATA]: < TAG5 OK Status completed (0.001 + 0.000 secs).\r\n
+[00:52:49.975][9f5d2482] IMAP[DATA]: > TAG6 STATUS "Archive" (MESSAGES UNSEEN UIDNEXT HIGHESTMODSEQ)\r\n
+[00:52:49.979][9f5d2482] IMAP[DATA]: < * STATUS Archive (MESSAGES 0 UIDNEXT 1 UNSEEN 0 HIGHESTMODSEQ 1)\r\n
+[00:52:49.983][9f5d2482] IMAP[DATA]: < TAG6 OK Status completed (0.001 + 0.000 secs).\r\n
+[00:52:49.986][9f5d2482] AJAX[DATA]: {"Action":"FolderInformationMultiply","Result":{"List":[{"Folder":"Drafts","Hash":"1ecb79da9cbcd82425a8e279e1e03a59","MessageCount":0,"MessageUnseenCount":0,"UidNext":"1","Flags":[],"HighestModSeq":"1","NewMessages":[]},{"Folder":"Junk E-mail","Hash":"6a32012e965d6fa36bc4fefc2b8ccc07","MessageCount"...
+[00:52:50.012][9f5d2482] IMAP[DATA]: > TAG7 LOGOUT\r\n
+[00:52:50.015][9f5d2482] IMAP[DATA]: < * BYE Logging out\r\n
+[00:52:50.018][9f5d2482] IMAP[DATA]: < TAG7 OK Logout completed (0.001 + 0.000 secs).\r\n
+[00:52:50.022][9f5d2482] IMAP[NOTE]: Disconnected from "tcp://mail.asa.br:143" (success)
+[00:52:50.026][9f5d2482] INFO[MEMORY]: Memory peak usage: 2MB
+[00:52:50.030][9f5d2482] INFO[TIME]: Time delta: 0.58865809440613
